@@ -13,6 +13,7 @@ import Notifications from '../screens/Notifications';
 import TrackDisases from '../screens/trackDiseases/TrackDisases';
 import ProminenTinfection from '../screens/prominenTInfection/prominenTinfection';
 import Consultation from '../screens/consultation/Consultation';
+import GreenDiscover from '../screens/greenDiscover/greenDiscover';
 
 
 const Stack=createNativeStackNavigator();
@@ -30,6 +31,8 @@ const AppNavigation = () => {
             <Stack.Screen name='TrackDiseases' options={{headerShown:false}} component={TrackDisases}/>
             <Stack.Screen name='ProminenTinfection' options={{headerShown:false}} component={ProminenTinfection}/>
             <Stack.Screen name='Consultation' options={{headerShown:false}} component={Consultation}/>
+            <Stack.Screen name='GreenDiscover' options={{headerShown:false}} component={GreenDiscover}/>
+
 
 
 

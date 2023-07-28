@@ -19,7 +19,7 @@ const PlantExpert = () => {
                         </TouchableOpacity>
                     </View>
                     <View>
-                        <Image className="w-40 h-36 -left-6" source={require('../../../Assets/images/consultant.png')} />
+                        <Image className="w-44 h-36 -left-6" source={require('../../../Assets/images/consultant.png')} />
                     </View>
                 </View>
             </View>

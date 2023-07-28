@@ -6,6 +6,7 @@ import TopRightArt from './TopRightArt';
 import CheckPlantArea from './CheckPlantArea';
 import CommonDiseases from './CommonDiseases';
 import PlantExpert from './PlantExpert';
+import PlantRecomendation from './PlantRecomendation';
 const HomeScreen = () => {
   return (
     <SafeAreaView className="flex-1 bg-orange-100 ">
@@ -16,6 +17,7 @@ const HomeScreen = () => {
         <CheckPlantArea></CheckPlantArea>
         <CommonDiseases></CommonDiseases>
         <PlantExpert></PlantExpert>
+        <PlantRecomendation></PlantRecomendation>
 
       </ScrollView>
     </SafeAreaView>
