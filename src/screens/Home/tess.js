@@ -2,35 +2,24 @@ import { View, Text, TouchableOpacity, Image, ScrollView, Touchable } from 'reac
 import React, { useState } from 'react'
 
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Bars3CenterLeftIcon, HeartIcon, ShoppingCartIcon } from 'react-native-heroicons/solid';
+import { Bars3CenterLeftIcon, BellAlertIcon } from 'react-native-heroicons/solid';
 import { useNavigation } from '@react-navigation/native';
 import { categories, featuredFruits } from '../../Assets/Data/Data';
 import FruitCard from '../components/FruitCard';
 import FruitCardSales from '../components/FruitCardSales';
 
-const HomeScreen = () => {
+const Home = () => {
   const [activeCategory, setActiveCategory] = useState('Oranges');
   const navigation = useNavigation();
   return (
-    <SafeAreaView className="flex-1 bg-orange-50">
-      {/* Navbar in top */}
-      <View className="navbar bg-orange-200 flex-row justify-between items-center">
-        <Bars3CenterLeftIcon size="30" color="black" />
-        <TouchableOpacity onPress={() => navigation.navigate('Camera')} 
-        className="p-2 rounded-xl bg-orange-100">
-          <ShoppingCartIcon size="25" color="orange" />
-        </TouchableOpacity>
-      </View>
-      <ScrollView>
-      {/* categories */}
-      <View className="mt-4">
-        <Text className="bg-indigo-300 text-2xl tracking-widest font-medium p-3 text-center">Seasonal</Text>
-        <Text className="bg-rose-400 text-3xl font-semibold p-2 m-2 text-center ">Fruits and Vegetables</Text>
-        <ScrollView className="mt-8 px-5 " horizontal showsHorizontalScrollIndicator={false}>
+    <SafeAreaView className="flex-1 bg-orange-100">
+      
+      <View className="z-10">
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           {
             categories.map((category, index) => {
               let isActive = category == activeCategory;
-              let textClass = `text-xl text-center w-28 p-1 ${isActive ? 'bg-sky-200 font-bold rounded-full  ' : ''}`;
+              let textClass = `text-xl text-center w-28 p-1 ${isActive ? 'bg-red-300 font-bold rounded-full  ' : ''}`;
               return (
                 <TouchableOpacity
                   onPress={() => setActiveCategory(category)}
@@ -49,8 +38,10 @@ const HomeScreen = () => {
         </ScrollView>
       </View>
 
+
+      <ScrollView className="z-10 mt-5">
         {/* carousel */}
-        <View className="carousel mt-8">
+        <View className="carousel">
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {
               featuredFruits.map((fruit, index) => {
@@ -61,8 +52,8 @@ const HomeScreen = () => {
             }
           </ScrollView>
         </View>
-        
-          {/* sales */}
+
+        {/* sales */}
         <View className="mt-8 pl-5 space-y-1">
           <Text className="text-xl font-bold">Hot Sales</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ overflow: 'visible' }}>
@@ -77,8 +68,9 @@ const HomeScreen = () => {
         </View>
       </ScrollView>
 
+
     </SafeAreaView>
   )
 }
 
-export default HomeScreen
+export default Home

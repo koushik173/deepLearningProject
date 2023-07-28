@@ -1,9 +1,10 @@
 export const categories = [
-    "Oranges", 
-    "Bananas", 
-    "Pineapple",  
-    "Apple", 
-    "Cherry"
+    "All", 
+    "Diagnosis", 
+    "Crops",  
+    "Fruits", 
+    "Vegtables",
+    "Flowers"
 ];
 
 export const featuredFruits = [

@@ -26,7 +26,7 @@ const SignUpScreen = () => {
         </View>
       </SafeAreaView>
 
-      <View className="flex-1 bg-white px-8 pt-8 rounded-t-large">
+      <View className="flex-1 bg-white px-8 pt-8 rounded-t-3xl">
 
         <View className="form space-y-2">
             <Text className="text-gray-700 ml-4">Full Name</Text>
