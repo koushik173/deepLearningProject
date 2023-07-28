@@ -18,6 +18,7 @@ const AppNavigation = () => {
             <Stack.Screen name='SignUp'options={{headerShown:false}} component={SignUpScreen}/>
             <Stack.Screen name='Login'options={{headerShown:false}} component={LoginScreen}/>
             <Stack.Screen name={"Home"}options={{headerShown:false}} component={HomeScreen}/>
+            
         </Stack.Navigator>
     </NavigationContainer>
   )
