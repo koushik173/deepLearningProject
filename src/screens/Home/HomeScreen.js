@@ -4,9 +4,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Navbar from './Navbar';
 import TopRightArt from './TopRightArt';
 import CheckPlantArea from './CheckPlantArea';
-import CommonDiseases from './CommonDiseases';
-import PlantExpert from './PlantExpert';
-import PlantRecomendation from './PlantRecomendation';
+import CommonDiseasesArea from './CommonDiseasesArea';
+import PlantExpertArea from './PlantExpertArea';
+import PlantRecomendArea from './PlantRecomendArea';
+import PlantTypesArea from './PlantTypesArea';
+import GreenDiscoverArea from './GreenDiscoverArea';
+
+// import GreenDiscoverArea from './GreenDiscoverArea';
 const HomeScreen = () => {
   return (
     <SafeAreaView className="flex-1 bg-orange-100 ">
@@ -15,9 +19,14 @@ const HomeScreen = () => {
 
       <ScrollView>
         <CheckPlantArea></CheckPlantArea>
-        <CommonDiseases></CommonDiseases>
-        <PlantExpert></PlantExpert>
-        <PlantRecomendation></PlantRecomendation>
+        <CommonDiseasesArea></CommonDiseasesArea>
+        <PlantExpertArea></PlantExpertArea>
+        <PlantRecomendArea></PlantRecomendArea>
+        <PlantTypesArea></PlantTypesArea>
+        <GreenDiscoverArea></GreenDiscoverArea>
+
+
+        {/* <GreenDiscoverArea></GreenDiscoverArea> */}
 
       </ScrollView>
     </SafeAreaView>

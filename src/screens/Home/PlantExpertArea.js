@@ -2,7 +2,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 
-const PlantExpert = () => {
+const PlantExpertArea = () => {
     const navigation = useNavigation();
     return (
         <View className="h-44">
@@ -27,4 +27,4 @@ const PlantExpert = () => {
     )
 }
 
-export default PlantExpert
+export default PlantExpertArea

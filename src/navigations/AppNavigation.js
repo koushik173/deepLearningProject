@@ -5,15 +5,14 @@ import OnboardingScreen from '../screens/OnboardingScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import LoginScreen from '../screens/LoginScreen';
-
-import { ROUTES } from '../variables/Variables';
-import BottomTabNavigation from './BottomTabNavigation';
 import BottomTab from './BottomTab';
 import Notifications from '../screens/Notifications';
 import TrackDisases from '../screens/trackDiseases/TrackDisases';
-import ProminenTinfection from '../screens/prominenTInfection/prominenTinfection';
 import Consultation from '../screens/consultation/Consultation';
-import GreenDiscover from '../screens/greenDiscover/greenDiscover';
+import ProminenTinfection from '../screens/prominenTInfection/ProminenTinfection';
+import GreenDiscover from '../screens/greenDiscover/GreenDiscover';
+import PlantRecomend from '../screens/plantRecomend/PlantRecomend';
+import PlantTypes from '../screens/plantTypes/PlantTypes';
 
 
 const Stack=createNativeStackNavigator();
@@ -32,13 +31,10 @@ const AppNavigation = () => {
             <Stack.Screen name='ProminenTinfection' options={{headerShown:false}} component={ProminenTinfection}/>
             <Stack.Screen name='Consultation' options={{headerShown:false}} component={Consultation}/>
             <Stack.Screen name='GreenDiscover' options={{headerShown:false}} component={GreenDiscover}/>
+            <Stack.Screen name='PlantRecomend' options={{headerShown:false}} component={PlantRecomend}/>
+            <Stack.Screen name='PlantTypes' options={{headerShown:false}} component={PlantTypes}/>
 
-
-
-
-
-            {/* <Stack.Screen name='Home' options={{headerShown:false}} component={HomeScreen}/> */}
-            
+           
         </Stack.Navigator>
     </NavigationContainer>
   )

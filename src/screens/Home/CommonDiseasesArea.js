@@ -5,7 +5,7 @@ import { featuredFruits } from '../../../Assets/Data/Data'
 import { useNavigation } from '@react-navigation/native';
 import { ArrowLeftIcon, ArrowRightIcon } from 'react-native-heroicons/solid';
 
-const CommonDiseases = () => {
+const CommonDiseasesArea = () => {
     const navigation = useNavigation();
     return (
         <View className="carousel -top-6">
@@ -33,5 +33,5 @@ const CommonDiseases = () => {
     )
 }
 
-export default CommonDiseases 
+export default CommonDiseasesArea 
 
