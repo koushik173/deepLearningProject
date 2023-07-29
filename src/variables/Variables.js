@@ -20,7 +20,7 @@ const ROUTES= {
 
    const  COLORS= {
     gradientForm: '#f176b8',
-    primary: '#FF8B02',
+    primary: '#ccf5bf',
     white: '#FFFFFF',
     dark: '#444',
     bgColor: '#FF8B02',

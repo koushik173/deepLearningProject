@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const GreenDiscover = () => {
+const Learn = () => {
   return (
     <View>
-      <Text>greenDiscover</Text>
+      <Text>Learn</Text>
     </View>
   )
 }
 
-export default GreenDiscover
+export default Learn

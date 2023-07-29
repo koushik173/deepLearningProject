@@ -11,7 +11,6 @@ const PlantExpertArea = () => {
                     <View className="p-7 ml-3">
                         <Text className="text-xl font-bold text-green-800 ">Consult Specialists</Text>
                         <Text className="text-sm  font-bold text-black-50 w-44">Learn how to assist your ailing plants.</Text>
-                        
                         <TouchableOpacity className="p-2 mt-2 bg-green-800 rounded-xl" onPress={() => navigation.navigate('Consultation')}>
                             <Text className="font-xl font-bold text-center text-green-100">
                                 Get Consultation

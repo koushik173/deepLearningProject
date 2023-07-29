@@ -6,14 +6,14 @@ import TopRightArt from './TopRightArt';
 import CheckPlantArea from './CheckPlantArea';
 import CommonDiseasesArea from './CommonDiseasesArea';
 import PlantExpertArea from './PlantExpertArea';
-import PlantRecomendArea from './PlantRecomendArea';
-import PlantTypesArea from './PlantTypesArea';
 import GreenDiscoverArea from './GreenDiscoverArea';
+import PlantQuestArea from './PlantQuestArea';
+import Footer from './Footer';
 
 // import GreenDiscoverArea from './GreenDiscoverArea';
 const HomeScreen = () => {
   return (
-    <SafeAreaView className="flex-1 bg-orange-100 ">
+    <SafeAreaView className="flex-1 bg-green-50 ">
       <Navbar></Navbar>
       <TopRightArt></TopRightArt>
 
@@ -21,14 +21,12 @@ const HomeScreen = () => {
         <CheckPlantArea></CheckPlantArea>
         <CommonDiseasesArea></CommonDiseasesArea>
         <PlantExpertArea></PlantExpertArea>
-        <PlantRecomendArea></PlantRecomendArea>
-        <PlantTypesArea></PlantTypesArea>
+
+        <PlantQuestArea></PlantQuestArea>
         <GreenDiscoverArea></GreenDiscoverArea>
-
-
-        {/* <GreenDiscoverArea></GreenDiscoverArea> */}
-
+        <Footer></Footer>
       </ScrollView>
+
     </SafeAreaView>
   )
 }

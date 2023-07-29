@@ -6,12 +6,12 @@ const TopRightArt = () => {
     <View className="z-0 absolute ml-12 mt-2">
         <View className="flex justify-center items-center">
           <View className="relative mt-10 mr-64 ">
-            <View className="h-96 w-80 bg-orange-200 rounded-full absolute transform rotate-45 bottom-0 left-0"></View>
+            <View className="h-96 w-80 bg-green-200 rounded-full absolute transform rotate-45 bottom-0 left-0"></View>
           </View>
         </View>
         <View className="flex justify-center items-center">
           <View className="relative mt-8 ml-16 ">
-            <View className="h-64 w-72 bg-orange-200 rounded-full absolute transform rotate-45 bottom-0 left-0"></View>
+            <View className="h-64 w-72 bg-green-200 rounded-full absolute transform rotate-45 bottom-0 left-0"></View>
           </View>
         </View>
       </View>
