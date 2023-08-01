@@ -14,7 +14,7 @@ const WelcomeScreen = () => {
                 </Text>
                 <View className="flex-row justify-center">
                     <Image
-                        source={require('../../Assets/images/farmer.png')}
+                        source={require('../../../Assets/images/farmer.png')}
                         className="w-80 h-96"
                     />
                 </View>

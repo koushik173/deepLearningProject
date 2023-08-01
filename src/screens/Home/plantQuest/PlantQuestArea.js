@@ -10,7 +10,7 @@ const PlantQuestArea = () => {
             <Text className="text-2xl font-bold text-cyan-600 mb-5 ">Plants Quest : </Text>
 
             <View className="flex flex-row">
-                <Image className="w-48 h-48 -top-6 -left-4" source={require('../../../Assets/images/recomendation.png')} />
+                <Image className="w-48 h-48 -top-6 -left-4" source={require('../../../../Assets/images/recomendation.png')} />
                 <View className="rounded-3xl w-full h-36 mt-2 bg-cyan-600">
                     <View className="p-3 ml-2">
                         <Text className="text-xl font-bold text-white ">Gets Your </Text>
@@ -44,7 +44,7 @@ const PlantQuestArea = () => {
                         <Text className="text-sm  font-bold text-black-50 w-48">Figure out various types of plants, such as fruits, flowers, and vegetables.</Text>
                     </View>
                 </View>
-                <Image className="w-48 h-48 -top-8" source={require('../../../Assets/images/plantTypes.png')} />
+                <Image className="w-48 h-48 -top-8" source={require('../../../../Assets/images/plantTypes.png')} />
             </View>
 
             <View className="flex justify-center items-center">
@@ -56,7 +56,7 @@ const PlantQuestArea = () => {
                         <Text className="font-bold text-center text-xs text-black">All Catagory</Text>
                     </TouchableOpacity>
                     <View>
-                        <Image className="w-28 h-32 ml-1 -top-16" source={require('../../../Assets/images/chilli.png')} />
+                        <Image className="w-28 h-32 ml-1 -top-16" source={require('../../../../Assets/images/chilli.png')} />
                     </View>
                 </View>
             </View>

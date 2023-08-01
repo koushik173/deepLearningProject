@@ -12,7 +12,7 @@ const GreenDiscoverArea = () => {
             <TouchableOpacity onPress={() => navigation.navigate('Learn')} className="bg-green-700 opacity-90 w-32 h-12 p-1  items-center rounded-tr-3xl rounded-bl-3xl">
               <Text className="text-3xl font-bold text-white ">Learn</Text>
             </TouchableOpacity>
-            <Image className="w-28 h-28 -top-2" source={require('../../../Assets/images/learning.png')} />
+            <Image className="w-28 h-28 -top-2" source={require('../../../../Assets/images/learning.png')} />
           </View>
         </View>
 
@@ -22,7 +22,7 @@ const GreenDiscoverArea = () => {
             className="bg-green-700 opacity-90 w-32 h-12 p-1  items-center rounded-tr-3xl rounded-bl-3xl">
               <Text className="text-3xl font-bold text-white ">Blog</Text>
             </TouchableOpacity>
-            <Image className="w-28 h-28 -top-2" source={require('../../../Assets/images/blog.png')} />
+            <Image className="w-28 h-28 -top-2" source={require('../../../../Assets/images/blog.png')} />
           </View>
         </View>
 
@@ -31,7 +31,7 @@ const GreenDiscoverArea = () => {
             <TouchableOpacity onPress={() => navigation.navigate('About')} className="bg-green-700 opacity-90 w-32 h-12 p-1  items-center rounded-tr-3xl rounded-bl-3xl">
               <Text className="text-3xl font-bold text-white ">About</Text>
             </TouchableOpacity>
-            <Image className="w-24 h-24 -top-2" source={require('../../../Assets/images/about.png')} />
+            <Image className="w-24 h-24 -top-2" source={require('../../../../Assets/images/about.png')} />
           </View>
         </View>
     </View>

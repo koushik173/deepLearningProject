@@ -1,14 +1,11 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-
-
 import { COLORS } from '../variables/Variables';
-
-import {SparklesIcon, ShoppingCartIcon, HomeIcon, MagnifyingGlassCircleIcon, CubeTransparentIcon, UserCircleIcon } from 'react-native-heroicons/solid';
-import SearchScreen from '../screens/SearchScreen';
-import BlogScreen from '../screens/BlogScreen';
-import ProfileScreen from '../screens/ProfileScreen';
-import HomeScreen from '../screens/Home/HomeScreen';
+import {HomeIcon, MagnifyingGlassCircleIcon, CubeTransparentIcon, UserCircleIcon } from 'react-native-heroicons/solid';
+import HomeStackNavigation from './HomeStackNavigation';
+import SearchStackNavigation from './SearchStackNavigation';
+import BlogStackNavigation from './BlogStackNavigation';
+import ProfileStackNavigation from './ProfileStackNavigation';
 const Tab = createBottomTabNavigator();
 
 const BottomTab = () => {
@@ -22,27 +19,27 @@ const BottomTab = () => {
         tabBarInactiveBackgroundColor: COLORS.primary
     })}
     >
-    <Tab.Screen name="HomeTab" component={HomeScreen} options={{
+    <Tab.Screen name="HomeTab" component={HomeStackNavigation} options={{
           tabBarLabel: 'Home',
           tabBarIcon: () => (
             <HomeIcon size="25" color="green" />
           ),
         }}/>
 
-    <Tab.Screen name="SearchTab" component={SearchScreen} options={{
+    <Tab.Screen name="SearchTab" component={SearchStackNavigation} options={{
           tabBarLabel: 'Search',
           tabBarIcon: () => (
             <MagnifyingGlassCircleIcon  size="25"  color="green" />
           ),
         }} />
-    <Tab.Screen name="BlogTab" component={BlogScreen} options={{
+    <Tab.Screen name="BlogTab" component={BlogStackNavigation} options={{
           tabBarLabel: 'BLog',
           tabBarIcon: () => (
             <CubeTransparentIcon  size="25"  color="green" />
           ),
         }} />
       
-      <Tab.Screen name="ProfileTab" component={ProfileScreen} options={{
+      <Tab.Screen name="ProfileTab" component={ProfileStackNavigation} options={{
           tabBarLabel: 'Profile',
           tabBarIcon: () => (
             <UserCircleIcon  size="25"  color="green" />

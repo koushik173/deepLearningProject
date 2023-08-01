@@ -1,7 +1,7 @@
 import { View, Text , ScrollView, TouchableOpacity} from 'react-native'
 import React from 'react'
-import FruitCard from '../../components/FruitCard'
-import { featuredFruits } from '../../../Assets/Data/Data'
+import FruitCard from '../../../components/FruitCard'
+import { featuredFruits } from '../../../../Assets/Data/Data'
 import { useNavigation } from '@react-navigation/native';
 import { ArrowLeftIcon, ArrowRightIcon } from 'react-native-heroicons/solid';
 

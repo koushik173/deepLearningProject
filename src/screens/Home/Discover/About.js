@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { ArrowLeftIcon } from 'react-native-heroicons/solid';
-import GoBack from '../../components/GoBack';
+import GoBack from '../../../components/GoBack';
 
 const About = () => {
   
