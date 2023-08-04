@@ -5,6 +5,7 @@ import OnboardingScreen from '../screens/starting/OnboardingScreen'
 import WelcomeScreen from '../screens/starting/WelcomeScreen'
 import SignUpScreen from '../screens/starting/SignUpScreen'
 import LoginScreen from '../screens/starting/LoginScreen'
+
 const StartingStack = createNativeStackNavigator()
 
 const StartingStackNavigation = () => {
