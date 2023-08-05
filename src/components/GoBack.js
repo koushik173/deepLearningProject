@@ -8,9 +8,9 @@ const GoBack = () => {
         <View className="flex-row justify-start">
             <TouchableOpacity
                 onPress={() => navigation.goBack()}
-                className="bg-green-300 h-8 w-16 rounded-tr-2xl rounded-bl-2xl ml-2 mt-2 items-center justify-center"
+                className="bg-green-800 h-8 w-16 rounded-tr-2xl rounded-bl-2xl ml-2 mt-2 items-center justify-center"
             >
-                <ArrowLeftIcon size="20" color="black" />
+                <ArrowLeftIcon size="35" color="white" />
             </TouchableOpacity>
         </View>
     )

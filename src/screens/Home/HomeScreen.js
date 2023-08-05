@@ -14,7 +14,8 @@ import CarePlantArea from './trackDiseases/CheckPlantArea';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView className="flex-1 bg-green-50 ">
+    <SafeAreaView className="flex-1 bg-white ">
+      
       <Navbar></Navbar>
       <TopRightArt></TopRightArt>
 
