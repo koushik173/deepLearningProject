@@ -162,7 +162,7 @@ const LoginScreen = () => {
                             <View className="-top-2">
                                 {
                                     data.isValidUser ? null : 
-                                    <Text className="absolute ml-2  text-red-500">example@gmail.com</Text>
+                                    <Text className="absolute ml-2  text-red-500">example@gmail.com or example@lus.ac.bd</Text>
                                 }
                             </View>
 

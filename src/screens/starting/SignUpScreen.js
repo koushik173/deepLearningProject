@@ -166,7 +166,7 @@ const SignUpScreen = () => {
                             <View className="-top-3">
                                 {
                                     data.isValidName ? null : 
-                                    <Text className="absolute ml-2  text-red-500">Example Name</Text>
+                                    <Text className="absolute ml-2  text-red-500 italic">Fisrt letter must be capital</Text>
                                 }
                             </View>
                         </View>
@@ -189,7 +189,7 @@ const SignUpScreen = () => {
                             <View className="-top-3">
                                 {
                                     data.isValidUser ? null : 
-                                    <Text className="absolute ml-2  text-red-500">example@gmail.com</Text>
+                                    <Text className="absolute ml-2  text-red-500 italic">example@gmail.com or example@lus.ac.bd</Text>
                                 }
                             </View>
                         </View>

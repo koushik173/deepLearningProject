@@ -1,19 +1,18 @@
-import React, { createContext, useState} from 'react';
+import React, { createContext, useState, useEffect} from 'react';
 import auth from '@react-native-firebase/auth';
 import {Alert } from 'react-native';
-
+import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-google-signin/google-signin';
+import axios from 'axios';
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-
   const [user, setUser] = useState(null);
-  
-
   const [userError, setuserError] = useState('');
   const [loading, setLoading] = useState(false);
   const StopLoading = () => { setLoading(false) }
   const StopError = () => { setuserError(false) }
+
 
   const SignUp = async (name, email, password) => {
 
@@ -36,6 +35,7 @@ export const AuthProvider = ({ children }) => {
       console.log('User profile updated successfully');
 
       // setUser(null);
+      saveUserInfo(name, email);
 
     } catch (error) {
       // console.error('Error creating user or sending email verification:', error);
@@ -49,8 +49,6 @@ export const AuthProvider = ({ children }) => {
     }
     setLoading(false);
   };
-
-
 
   const Login = async (email, password) => {
     setuserError('');
@@ -107,6 +105,44 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const signInWithGoogle = async () => {
+    console.log("working not");
+    // useEffect(() => {
+    //   GoogleSignin.configure({
+    //     webClientId: 'AIzaSyDY_SZPdPgT4jFONv5NJ5-BG1JDCaXD9eA', 
+    //   });
+    // }, []);
+
+    // try {
+    //   await GoogleSignin.hasPlayServices();
+    //   const { idToken } = await GoogleSignin.signIn();
+    //   const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+
+    //   await auth().signInWithCredential(googleCredential);
+    //   console.log('Google login success');
+    // } catch (error) {
+    //   if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+    //     console.log('Google login canceled');
+    //   } else if (error.code === statusCodes.IN_PROGRESS) {
+    //     console.log('Google login is in progress');
+    //   } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+    //     console.log('Play services are not available');
+    //   } else {
+    //     console.error('Google login error:', error);
+    //   }
+    // }
+  };
+
+  const saveUserInfo = async(name, email)=>{
+    const userData={name, email}
+    try {
+      const response = await axios.post('http://10.0.2.2:5000/users', userData);
+      console.log('Server response: ', response.data);
+    } catch (error) {
+      console.log("Server: ",error.message);
+      // setuserError(error.message)
+    }
+  }
 
   const authInfo = {
     SignUp,
@@ -119,7 +155,8 @@ export const AuthProvider = ({ children }) => {
     loading,
     StopLoading,
     StopError,
-    resetPassword
+    resetPassword,
+    signInWithGoogle
 
   };
 

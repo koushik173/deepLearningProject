@@ -1,10 +1,12 @@
 import { View, Text ,TouchableOpacity, Image} from 'react-native'
-import React from 'react'
+import React,{useContext} from 'react'
+import { AuthContext } from '../../components/Auth/AuthProvider';
 
 const SocialLogin = () => {
+    const {signInWithGoogle} =useContext(AuthContext);
     return (
         <View className="flex-row justify-center space-x-6">
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>signInWithGoogle()}>
                 <Image source={require('../../../Assets/assets/icons/google.png')}
                     className="w-10 h-12" />
             </TouchableOpacity>

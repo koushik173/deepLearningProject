@@ -35,7 +35,6 @@ const AppNavigation = () => {
             (user && user.emailVerified)?<Stack.Screen name='Home' options={{headerShown:false}} component={BottomTab}/>:
           <Stack.Screen name='Starting' options={{headerShown:false}} component={StartingStackNavigation}/>
           }
-          
         </Stack.Navigator>
     </NavigationContainer>
   )
