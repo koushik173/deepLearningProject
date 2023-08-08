@@ -5,8 +5,11 @@ import auth from '@react-native-firebase/auth';
 import BottomTab from './BottomTab';
 import StartingStackNavigation from './StartingStackNavigation';
 import { AuthContext } from '../components/Auth/AuthProvider';
+import { StatusBar } from 'react-native';
 
 const Stack=createNativeStackNavigator();
+StatusBar.setBackgroundColor('#93fabb'); // Set status bar background color to white
+StatusBar.setBarStyle('dark-content');
 
 const AppNavigation = () => {
    // Set an initializing state whilst Firebase connects

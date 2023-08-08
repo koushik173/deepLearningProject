@@ -11,7 +11,7 @@ const NotificationModal = () => {
     return (
         <View>
             <TouchableOpacity onPress={toggleModal}
-                className="rounded-2xl bg-green-500 mr-2 mt-1">
+                className="rounded-2xl bg-green-900 mr-2 mt-1">
                 <Image className="w-10 h-10  " source={require('../../../Assets/images/bellGreen.png')} />
             </TouchableOpacity>
 

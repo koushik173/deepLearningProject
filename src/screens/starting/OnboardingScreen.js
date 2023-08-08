@@ -3,7 +3,7 @@ import React from 'react';
 import Onboarding from 'react-native-onboarding-swiper';
 
 // import Lottie from 'lottie-react-native';
-import LottieView from "lottie-react-native";
+// import LottieView from "lottie-react-native";
 import { useNavigation } from '@react-navigation/native';
 const { width, height } = Dimensions.get('window');
 
@@ -22,7 +22,7 @@ const OnboardingScreen = () => {
                         backgroundColor: '#FF8B02',
                         image: (
                             <View style={styles.lottie}>
-                                <LottieView source={require("../../../Assets/Animation/onboardingAnimation.json")} autoPlay loop />
+                                {/* <LottieView source={require("../../../Assets/Animation/onboardingAnimation.json")} autoPlay loop /> */}
                                 {/* <Lottie source={require('../../Assets/Animation/onboardingAnimation.json')} autoPlay loop /> */}
                             </View>
                         ),
@@ -33,7 +33,7 @@ const OnboardingScreen = () => {
                         backgroundColor: '#FF8B02',
                         image: (
                             <View style={styles.lottie}>
-                                <LottieView source={require('../../../Assets/Animation/animation_lkc8ccy5.json')} autoPlay loop />
+                                {/* <LottieView source={require('../../../Assets/Animation/animation_lkc8ccy5.json')} autoPlay loop /> */}
 
                             </View>
                         ),
@@ -44,7 +44,7 @@ const OnboardingScreen = () => {
                         backgroundColor: '#FF8B02',
                         image: (
                             <View style={styles.lottie}>
-                                <LottieView source={require('../../../Assets/Animation/animation_lkc89tt9.json')} autoPlay loop />
+                                {/* <LottieView source={require('../../../Assets/Animation/animation_lkc89tt9.json')} autoPlay loop /> */}
 
                             </View>
                         ),

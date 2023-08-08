@@ -18,9 +18,9 @@ const PlantQuestArea = () => {
                             <Text className="text-xl font-bold text-white ">Ideal plant</Text>
                             <TouchableOpacity
                                 onPress={() => navigation.navigate('PlantRecomend')}
-                                className="bg-green-400 w-20 mt-2 h-7 p-1 items-center rounded-tr-2xl rounded-bl-2xl ml-2"
+                                className="bg-cyan-900 w-20  h-7 items-center rounded-tr-2xl rounded-bl-2xl ml-2"
                             >
-                                <ArrowRightIcon size="20" color="black" />
+                                <ArrowRightIcon size="28" color="white" />
                             </TouchableOpacity>
                         </View>
                         <Text className="text-sm  font-bold text-black-50 w-48">To get specific suggestions provide the nutrient-environment factors.</Text>
@@ -36,9 +36,9 @@ const PlantQuestArea = () => {
                             <Text className="text-xl font-bold text-white ">variety</Text>
                             <TouchableOpacity
                                 onPress={() => navigation.navigate('PlantTypes')}
-                                className="bg-green-400 w-20 mt-2 h-7 p-1 ml-5 items-center rounded-tr-2xl rounded-bl-2xl "
+                                className="bg-cyan-900 w-20 mt-2 h-7 ml-5 items-center rounded-tr-2xl rounded-bl-2xl "
                             >
-                                <ArrowRightIcon size="20" color="black" />
+                                <ArrowRightIcon size="28" color="white" />
                             </TouchableOpacity>
                         </View>
                         <Text className="text-sm  font-bold text-black-50 w-48">Figure out various types of plants, such as fruits, flowers, and vegetables.</Text>
@@ -51,9 +51,9 @@ const PlantQuestArea = () => {
                 <View className="bg-cyan-600 w-56 h-16 -left-4 rounded-tr-3xl rounded-bl-3xl flex flex-row">
                     <TouchableOpacity
                         onPress={() => navigation.navigate('PlantRecomend')}
-                        className="bg-green-400 w-24 h-8 mt-4 ml-3 justify-center rounded-full "
+                        className="bg-cyan-900 w-24 h-8 mt-4 ml-3 justify-center rounded-full "
                     >
-                        <Text className="font-bold text-center text-xs text-black">All Catagory</Text>
+                        <Text className="font-bold text-center text-md text-white">All Catagory</Text>
                     </TouchableOpacity>
                     <View>
                         <Image className="w-28 h-32 ml-1 -top-16" source={require('../../../../Assets/images/chilli.png')} />

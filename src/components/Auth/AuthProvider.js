@@ -1,8 +1,9 @@
 import React, { createContext, useState, useEffect} from 'react';
 import auth from '@react-native-firebase/auth';
 import {Alert } from 'react-native';
-import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-google-signin/google-signin';
+// import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-google-signin/google-signin';
 import axios from 'axios';
+
 
 export const AuthContext = createContext();
 
@@ -13,6 +14,8 @@ export const AuthProvider = ({ children }) => {
   const StopLoading = () => { setLoading(false) }
   const StopError = () => { setuserError(false) }
 
+  
+  
 
   const SignUp = async (name, email, password) => {
 
@@ -156,7 +159,9 @@ export const AuthProvider = ({ children }) => {
     StopLoading,
     StopError,
     resetPassword,
-    signInWithGoogle
+    signInWithGoogle,
+    
+  
 
   };
 

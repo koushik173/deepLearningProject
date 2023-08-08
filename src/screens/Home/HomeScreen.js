@@ -1,5 +1,5 @@
-import { View, Text , ScrollView} from 'react-native'
-import React from 'react'
+import { View , ScrollView} from 'react-native'
+import React  from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Navbar from './navbar/Navbar';
 import TopRightArt from './TopRightArt';
@@ -12,9 +12,10 @@ import Footer from './Footer';
 import CarePlantArea from './trackDiseases/CheckPlantArea';
 
 
+
 const HomeScreen = () => {
   return (
-    <SafeAreaView className="flex-1 bg-white ">
+    <SafeAreaView className="flex-1 bg-white ml-2">
       
       <Navbar></Navbar>
       <TopRightArt></TopRightArt>

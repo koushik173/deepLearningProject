@@ -14,7 +14,7 @@ const CommonDiseasesArea = () => {
                 <TouchableOpacity onPress={() => navigation.navigate('ProminenTinfection')} 
                 className="mr-6 text-base font-bold ">
                     <View className="flex-row items-center shadow-lg shadow-green-500 ">
-                        <Text>See More </Text>
+                        <Text className='font-bold text-black opacity-80'>See More </Text>
                         <ArrowRightIcon size="15" color="black" />
                     </View>
                     
