@@ -19,7 +19,7 @@ const NotificationModal = () => {
             animationIn={"fadeInDown"}
             animationOut={"fadeOutUp"}
             onBackdropPress={() => setModalVisible(false)}>
-                <View className="bg-emerald-50 w-80 h-96 rounded-3xl ml-12 -top-20">
+                <View className="bg-emerald-50 w-80 h-96 rounded-3xl ml-12 -top-44">
                     <View className="flex-row justify-between items-center">
                         <Text></Text>
                         <Text className="left-4 text-xl rounded-br-3xl rounded-tl-3xl p-2 font-bold text-black bg-blue-300 ">Notifications</Text>
