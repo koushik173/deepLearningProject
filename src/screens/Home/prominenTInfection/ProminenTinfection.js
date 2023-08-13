@@ -42,7 +42,7 @@ const ProminenTinfection = () => {
   return (
     <View>
       {
-        selectDis? <DiscardInfo key={selectDis._id} selectDis={selectDis} setSelectDis={setSelectDis} ></DiscardInfo>:<ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrackf.jpg')} resizeMode="cover">
+        selectDis? <DiscardInfo key={selectDis._id} selectDis={selectDis} setSelectDis={setSelectDis} ></DiscardInfo>:<ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrack.jpg')} resizeMode="cover">
         {/* <Text> length:  {diseasesinfo.length}</Text> */}
         <GoBack></GoBack>
         <Text className="text-3xl bg-green-900 p-1 text-white font-bold mt-1">All Diseases Information:</Text>

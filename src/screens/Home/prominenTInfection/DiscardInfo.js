@@ -25,7 +25,7 @@ const DiscardInfo = (props) => {
   }
   return (
     <SafeAreaView>
-      <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrackf.jpg')} resizeMode="cover">
+      <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrack.jpg')} resizeMode="cover">
         <View className="flex-row justify-start">
           <TouchableOpacity
             onPress={() => handleBack()}

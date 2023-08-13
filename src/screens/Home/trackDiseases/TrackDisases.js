@@ -167,7 +167,7 @@ const TrackDisases = () => {
 
   return (
     <View>
-      <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrackf.jpg')} resizeMode="cover">
+      <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrack.jpg')} resizeMode="cover">
         {
           selectDis? <DiscardInfo key={selectDis._id} selectDis={selectDis} setSelectDis={setSelectDis} ></DiscardInfo>:
         
