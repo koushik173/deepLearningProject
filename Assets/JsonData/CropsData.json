@@ -1,0 +1,356 @@
+[
+    {
+        "Crops": "rice",
+        "Site_Selection": "Choose a warm and humid climate with abundant sunlight. Ensure access to a reliable water source for irrigation.",
+        "Soil_Preparation": "Plow and level the field to create a well-drained area with good water retention.",
+        "Seed_Selection_Preparation": "Select suitable rice seed varieties based on local climate and soil conditions. Pre-germinate seeds by soaking them in water for about 24 hours.",
+        "Seedbed_Preparation": "Prepare a weed-free seedbed with sufficient water for germination.",
+        "Transplanting": "Transplant seedlings (around 25-30 days old) into the main field with proper spacing (15-20 cm between plants, 20-25 cm between rows).",
+        "Irrigation": "Maintain a water level of 2-5 cm in the field until the flowering stage.",
+        "Fertilization": "Apply fertilizers according to soil testing and rice growth stages.",
+        "Weed_Pest_Management": "Monitor for weeds and pests, and implement appropriate control measures.",
+        "Disease_Management": "Implement disease prevention strategies and use fungicides if needed.",
+        "Harvesting": "Harvest when rice grains turn golden and moisture content is 18-25%.",
+        "Threshing_Processing": "Separate grains from stalks and husks through threshing and processing.",
+        "photo": "https://i.ibb.co/xJHM2dj/rice.png"
+    },
+    {
+        "Crops": "maize",
+        "Site_Selection": "Choose a sunny location with well-drained soil.",
+        "Soil_Preparation": "Plow and prepare the soil, ensuring good drainage.",
+        "Seed_Selection_Preparation": "Choose suitable maize varieties for your region. Prepare seeds by drying and treating them if necessary.",
+        "Seedbed_Preparation": "Create a seedbed with well-prepared soil.",
+        "Transplanting": "Sow maize seeds directly into the field at appropriate spacing (varies by variety).",
+        "Irrigation": "Provide adequate water during germination and initial growth stages.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient levels.",
+        "Weed_Pest_Management": "Control weeds and manage pests to ensure healthy growth.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest maize ears when kernels are fully matured and firm.",
+        "Threshing_Processing": "Remove kernels from the cobs through threshing.",
+        "photo": "https://i.ibb.co/58YqXJK/maize.png"
+    },
+    {
+        "Crops": "chickpea",
+        "Site_Selection": "Choose a well-drained location with plenty of sunlight.",
+        "Soil_Preparation": "Prepare the soil by plowing and removing debris.",
+        "Seed_Selection_Preparation": "Select healthy chickpea seeds and treat them if necessary.",
+        "Seedbed_Preparation": "Create a seedbed with fine soil texture.",
+        "Transplanting": "Directly sow chickpea seeds in rows or broadcast them.",
+        "Irrigation": "Provide regular irrigation, especially during flowering and pod development.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient levels.",
+        "Weed_Pest_Management": "Manage weeds and control pests using appropriate methods.",
+        "Disease_Management": "Monitor for diseases and apply fungicides if needed.",
+        "Harvesting": "Harvest chickpea pods when they are fully matured.",
+        "Threshing_Processing": "Remove chickpea seeds from pods through threshing.",
+        "photo": "https://i.ibb.co/3vvWt4Y/chickpea.png"
+    },
+    {
+        "Crops": "kidneybeans",
+        "Site_Selection": "Select a location with well-drained soil and ample sunlight.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Choose healthy kidney bean seeds and treat them if required.",
+        "Seedbed_Preparation": "Create a seedbed with loose soil and proper spacing.",
+        "Transplanting": "Directly sow kidney bean seeds in rows or hills.",
+        "Irrigation": "Provide regular water, especially during flowering and pod filling.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient analysis.",
+        "Weed_Pest_Management": "Control weeds and manage pests to ensure healthy growth.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest kidney beans when pods are mature and seeds are developed.",
+        "Threshing_Processing": "Shell the beans from the pods through threshing.",
+        "photo": "https://i.ibb.co/sWJHZx9/kidneybeans.png"
+    },
+    {
+        "Crops": "pigeonpeas",
+        "Site_Selection": "Choose a location with well-drained soil and full sunlight.",
+        "Soil_Preparation": "Prepare the soil by plowing and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Select healthy pigeon pea seeds and treat them if necessary.",
+        "Seedbed_Preparation": "Create a seedbed with well-prepared soil.",
+        "Transplanting": "Directly sow pigeon pea seeds in rows or pits.",
+        "Irrigation": "Provide regular irrigation during initial growth and flowering.",
+        "Fertilization": "Apply organic and inorganic fertilizers based on soil requirements.",
+        "Weed_Pest_Management": "Manage weeds and control pests as needed.",
+        "Disease_Management": "Monitor for diseases and apply appropriate measures.",
+        "Harvesting": "Harvest pigeon pea pods when they are mature.",
+        "Threshing_Processing": "Remove seeds from pods through threshing.",
+        "photo": "https://i.ibb.co/5TxzhD8/pigeonpeas.png"
+    },
+    {
+        "Crops": "mothbeans",
+        "Site_Selection": "Choose a location with well-drained soil and plenty of sunlight.",
+        "Soil_Preparation": "Prepare the soil through plowing and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Select healthy moth bean seeds and treat them if required.",
+        "Seedbed_Preparation": "Create a seedbed with fine soil texture.",
+        "Transplanting": "Directly sow moth bean seeds in rows or broadcast.",
+        "Irrigation": "Provide regular irrigation, especially during flowering and pod development.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient levels.",
+        "Weed_Pest_Management": "Manage weeds and control pests using suitable methods.",
+        "Disease_Management": "Monitor for diseases and apply fungicides when necessary.",
+        "Harvesting": "Harvest moth bean pods when they are fully matured.",
+        "Threshing_Processing": "Remove moth bean seeds from pods through threshing.",
+        "photo": "https://i.ibb.co/ZHf2TLy/mothbeans.png"
+    },
+    {
+        "Crops": "mungbean",
+        "Site_Selection": "Choose a well-drained location with plenty of sunlight.",
+        "Soil_Preparation": "Prepare the soil by plowing and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Select healthy mung bean seeds and treat them if necessary.",
+        "Seedbed_Preparation": "Create a seedbed with fine soil texture.",
+        "Transplanting": "Directly sow mung bean seeds in rows or hills.",
+        "Irrigation": "Provide regular irrigation during germination and growth stages.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient analysis.",
+        "Weed_Pest_Management": "Control weeds and manage pests to ensure healthy growth.",
+        "Disease Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest mung beans when pods are mature and seeds are developed.",
+        "Threshing_Processing": "Remove mung bean seeds from pods through threshing.",
+        "photo": "https://i.ibb.co/BwRLnrd/mungbean.png"
+    },
+    {
+        "Crops": "blackgram",
+        "Site_Selection": "Select a location with well-drained soil and ample sunlight.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Choose healthy black gram seeds and treat them if required.",
+        "Seedbed_Preparation": "Create a seedbed with loose soil and proper spacing.",
+        "Transplanting": "Directly sow black gram seeds in rows or hills.",
+        "Irrigation": "Provide regular water, especially during flowering and pod filling.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient levels.",
+        "Weed_Pest_Management": "Control weeds and manage pests to ensure healthy growth.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest black gram pods when they are mature and seeds are developed.",
+        "Threshing_Processing": "Remove black gram seeds from pods through threshing.",
+        "photo": "https://i.ibb.co/DpFJ3kS/blackgram.png"
+    },
+    {
+        "Crops": "lentil",
+        "Site_Selection": "Choose a location with well-drained soil and full sunlight.",
+        "Soil_Preparation": "Prepare the soil by plowing and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Select healthy lentil seeds and treat them if necessary.",
+        "Seedbed_Preparation": "Create a seedbed with well-prepared soil.",
+        "Transplanting": "Directly sow lentil seeds in rows or pits.",
+        "Irrigation": "Provide regular irrigation during initial growth and flowering.",
+        "Fertilization": "Apply organic and inorganic fertilizers based on soil requirements.",
+        "Weed_Pest_Management": "Manage weeds and control pests as needed.",
+        "Disease_Management": "Monitor for diseases and apply appropriate measures.",
+        "Harvesting": "Harvest lentil pods when they are mature and seeds are developed.",
+        "Threshing_Processing": "Remove lentil seeds from pods through threshing.",
+        "photo": "https://i.ibb.co/FwYG1gd/lentil.png"
+    },
+    {
+        "Crops": "pomegranate",
+        "Site_Selection": "Select a location with well-drained soil and full sunlight.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Choose healthy pomegranate seeds or plant young trees.",
+        "Seedbed_Preparation": "Prepare the planting hole with proper spacing.",
+        "Transplanting": "Transplant young pomegranate trees into the planting holes.",
+        "Irrigation": "Provide regular watering during establishment and growth.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient analysis.",
+        "Weed_Pest_Management": "Mulch around trees and control weeds. Manage pests as needed.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest pomegranates when they are fully ripe and colored.",
+        "Threshing_Processing": "Remove seeds from pomegranate arils through processing.",
+        "photo": "https://i.ibb.co/DzVdtc6/pomegranate.png"
+    },
+    {
+        "Crops": "banana",
+        "Site_Selection": "Choose a sunny location with well-drained soil.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Select healthy banana suckers for planting.",
+        "Seedbed_Preparation": "Prepare the planting hole or trench for the suckers.",
+        "Transplanting": "Plant banana suckers in the prepared holes or trenches.",
+        "Irrigation": "Provide consistent watering to keep the soil moist.",
+        "Fertilization": "Apply organic matter and balanced fertilizers for growth.",
+        "Weed_Pest_Management": "Control weeds and manage pests as needed.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest bananas when the fruit has developed and matured.",
+        "Threshing_Processing": "Peel and remove the outer layers to access the edible fruit.",
+        "photo": "https://i.ibb.co/dpvN320/banana.png"
+    },
+    {
+        "Crops": "mango",
+        "Site_Selection": "Select a sunny location with well-drained soil.",
+        "Soil_Preparation": "Prepare the planting hole or trench with proper drainage.",
+        "Seed_Selection_Preparation": "Choose healthy mango seeds or obtain grafted trees.",
+        "Seedbed_Preparation": "Germinate seeds in a nursery before transplanting.",
+        "Transplanting": "Plant mango saplings in the prepared holes with care.",
+        "Irrigation": "Water newly planted saplings regularly until established.",
+        "Fertilization": "Apply balanced fertilizers during different growth stages.",
+        "Weed_Pest_Management": "Mulch and control weeds around mango trees. Manage pests.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest mangoes when they reach desired size, color, and taste.",
+        "Threshing_Processing": "Peel and remove the skin, then separate the fruit from the pit.",
+        "photo": "https://i.ibb.co/StwqK79/mango.png"
+    },
+    {
+        "Crops": "grapes",
+        "Site_Selection": "Choose a well-drained and sunny location for planting.",
+        "Soil_Preparation": "Prepare the soil by tilling and improving drainage if needed.",
+        "Seed_Selection_Preparation": "Select healthy grape cuttings or young vines.",
+        "Seedbed_Preparation": "Prepare planting holes or rows for the grape vines.",
+        "Transplanting": "Plant grape vines with care, providing proper support.",
+        "Irrigation": "Water regularly during establishment and growth periods.",
+        "Fertilization": "Apply balanced fertilizers based on soil analysis and growth stage.",
+        "Weed_Pest_Management": "Control weeds and manage pests to ensure healthy vines.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest grapes when they are fully ripe and sweet.",
+        "Threshing_Processing": "Separate grapes from the stems and clusters for consumption.",
+        "photo": "https://i.ibb.co/znDnsf0/grapes.png"
+    },
+    {
+        "Crops": "watermelon",
+        "Site_Selection": "Choose a sunny location with well-drained soil.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Select healthy watermelon seeds for planting.",
+        "Seedbed_Preparation": "Create mounds or hills with well-prepared soil.",
+        "Transplanting": "Plant watermelon seeds or seedlings in the mounds.",
+        "Irrigation": "Provide consistent watering to keep the soil moist.",
+        "Fertilization": "Apply balanced fertilizers during the growing season.",
+        "Weed_Pest_Management": "Control weeds and manage pests for healthy growth.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest watermelons when they are fully ripe and sound hollow.",
+        "Threshing_Processing": "No threshing process; watermelons are consumed directly.",
+        "photo": "https://i.ibb.co/BCH7rj6/watermelon.png"
+    },
+    {
+        "Crops": "muskmelon",
+        "Site_Selection": "Choose a sunny location with well-drained soil.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Select healthy muskmelon seeds for planting.",
+        "Seedbed_Preparation": "Create mounds or hills with well-prepared soil.",
+        "Transplanting": "Plant muskmelon seeds or seedlings in the mounds.",
+        "Irrigation": "Provide consistent watering to keep the soil moist.",
+        "Fertilization": "Apply balanced fertilizers during the growing season.",
+        "Weed_Pest_Management": "Control weeds and manage pests for healthy growth.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest muskmelons when they are fully ripe and fragrant.",
+        "Threshing_Processing": "No threshing process; muskmelons are consumed directly.",
+        "photo": "https://i.ibb.co/0cmb1Gz/muskmelon.png"
+    },
+    {
+        "Crops": "apple",
+        "Site_Selection": "Select a location with well-drained soil and full sunlight.",
+        "Soil_Preparation": "Prepare the planting hole or trench with proper drainage.",
+        "Seed_Selection_Preparation": "Choose healthy apple seeds or obtain grafted trees.",
+        "Seedbed_Preparation": "Germinate seeds in a nursery before transplanting.",
+        "Transplanting": "Plant apple saplings in the prepared holes with care.",
+        "Irrigation": "Water newly planted saplings regularly until established.",
+        "Fertilization": "Apply balanced fertilizers during different growth stages.",
+        "Weed_Pest_Management": "Mulch and control weeds around apple trees. Manage pests.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest apples when they are firm and reach desired color.",
+        "Threshing_Processing": "Wash and clean apples for consumption.",
+        "photo": "https://i.ibb.co/PZ6KZtp/apple.png"
+    },
+    {
+        "Crops": "orange",
+        "Site_Selection": "Select a location with well-drained soil and full sunlight.",
+        "Soil_Preparation": "Prepare the planting hole or trench with proper drainage.",
+        "Seed_Selection_Preparation": "Choose healthy orange seeds or obtain grafted trees.",
+        "Seedbed_Preparation": "Germinate seeds in a nursery before transplanting.",
+        "Transplanting": "Plant orange saplings in the prepared holes with care.",
+        "Irrigation": "Water newly planted saplings regularly until established.",
+        "Fertilization": "Apply balanced fertilizers during different growth stages.",
+        "Weed_Pest_Management": "Mulch and control weeds around orange trees. Manage pests.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest oranges when they are fully colored and ripe.",
+        "Threshing_Processing": "Peel and separate orange segments for consumption.",
+        "photo": "https://i.ibb.co/GtLym9v/orange.png"
+    },
+    {
+        "Crops": "papaya",
+        "Site_Selection": "Select a sunny location with well-drained soil.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Choose healthy papaya seeds for planting.",
+        "Seedbed_Preparation": "Create raised beds or seedbeds with well-prepared soil.",
+        "Transplanting": "Plant papaya seeds or seedlings in the prepared beds.",
+        "Irrigation": "Water regularly during establishment and growth.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient analysis.",
+        "Weed_Pest_Management": "Control weeds and manage pests for healthy growth.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest papayas when they are fully colored and soft.",
+        "Threshing_Processing": "Cut papayas into halves, scoop out seeds, and enjoy the flesh.",
+        "photo": "https://i.ibb.co/vDG681B/papaya.png"
+    },
+    {
+        "Crops": "coconut",
+        "Site_Selection": "Select a coastal area with sandy soil and good drainage.",
+        "Soil_Preparation": "Clear the area and dig pits for planting coconut seedlings.",
+        "Seed_Selection_Preparation": "Choose healthy and mature coconuts for germination.",
+        "Seedbed_Preparation": "Germinate coconut seeds in a nursery before planting.",
+        "Transplanting": "Plant germinated coconut seedlings in the prepared pits.",
+        "Irrigation": "Water regularly during the establishment phase.",
+        "Fertilization": "Apply organic matter and balanced fertilizers for growth.",
+        "Weed_Pest_Management": "Control weeds and manage pests as needed.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest coconuts when they are mature and the husks are brown.",
+        "Threshing_Processing": "Remove husks to access the coconut fruit and water.",
+        "photo": "https://i.ibb.co/d0pbgnL/coconut.png"
+    },
+    {
+        "Crops": "cotton",
+        "Site_Selection": "Choose well-drained soil with good sunlight exposure.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring proper drainage.",
+        "Seed_Selection_Preparation": "Select healthy cotton seeds for planting.",
+        "Seedbed_Preparation": "Create seedbeds with loose soil and good tilth.",
+        "Transplanting": "Plant cotton seeds in the prepared seedbeds.",
+        "Irrigation": "Provide adequate irrigation during the growing season.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient levels.",
+        "Weed_Pest_Management": "Implement weed and pest management strategies.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest cotton when bolls have matured and opened.",
+        "Threshing_Processing": "Remove cotton fibers from the bolls through ginning.",
+        "photo": "https://i.ibb.co/LSY9JXw/cotton.png"
+    },
+    {
+        "Crops": "jute",
+        "Site_Selection": "Select a well-drained area with sufficient sunlight.",
+        "Soil_Preparation": "Prepare the soil by tilling and ensuring good drainage.",
+        "Seed_Selection_Preparation": "Choose healthy jute seeds for sowing.",
+        "Seedbed_Preparation": "Create seedbeds with well-prepared soil.",
+        "Transplanting": "Directly sow jute seeds in the prepared seedbeds.",
+        "Irrigation": "Keep the soil consistently moist during germination and growth.",
+        "Fertilization": "Apply balanced fertilizers based on soil nutrient analysis.",
+        "Weed_Pest_Management": "Control weeds and manage pests for healthy growth.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest jute plants when the fiber is fully developed.",
+        "Threshing_Processing": "Strip the jute fibers from the stem and ret them for processing.",
+        "photo": "https://i.ibb.co/bPtzvJ9/jute.png"
+    },
+    {
+        "Crops": "coffee",
+        "Site_Selection": "Choose a location with well-drained soil and shade.",
+        "Soil_Preparation": "Prepare the soil by tilling and adding organic matter.",
+        "Seed_Selection_Preparation": "Select healthy coffee seeds for germination.",
+        "Seedbed_Preparation": "Create a nursery for germinating coffee seeds.",
+        "Transplanting": "Plant coffee seedlings in shaded areas with care.",
+        "Irrigation": "Provide regular watering, especially during dry periods.",
+        "Fertilization": "Apply organic and balanced fertilizers for optimal growth.",
+        "Weed_Pest_Management": "Control weeds and manage pests as needed.",
+        "Disease_Management": "Monitor for diseases and apply appropriate treatments.",
+        "Harvesting": "Harvest coffee cherries when they are ripe and red.",
+        "Threshing_Processing": "Remove coffee beans from the cherries through processing.",
+        "photo": "https://i.ibb.co/30XP1hW/coffee.png"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
