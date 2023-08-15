@@ -9,7 +9,7 @@ import RecommendPlants from './RecommendPlants';
 
 const PlantRecomend = () => {
   const [cropsData, setCropsData] = useState(false)
-  const [Loading, setLoading] = useState(false);
+
   const { control, handleSubmit, reset, formState: { errors } } = useForm({
     defaultValues: {
       Nitrogen: "",
@@ -23,7 +23,6 @@ const PlantRecomend = () => {
   })
 
   const onSubmit = async (data) => {
-    setLoading(true)
     try {
       const response = await axios.post('http://10.0.2.2:8000/cropsRecommend', data, {
         headers: {
@@ -39,18 +38,17 @@ const PlantRecomend = () => {
         { text: 'OK', style: 'cancel' },
       ]);
     }
-    setLoading(false)
   }
 
   const handleClear = () => {
     setCropsData(false)
-    // reset()
+    reset()
   }
 
   return (
     <SafeAreaView>
       <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrack.jpg')} resizeMode="cover">
-        {Loading && <Text className="text-lg font-bold text-white">Loading..</Text>}
+        
         {
           cropsData ? <RecommendPlants handleClear={handleClear} cropsData={cropsData}></RecommendPlants> :
             <View>

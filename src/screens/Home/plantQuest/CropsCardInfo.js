@@ -16,7 +16,7 @@ const CropsCardInfo = (props) => {
         Weed_Pest_Management,
         Disease_Management,
         Harvesting,
-        Threshing_Processin,
+        Threshing_Processing,
         photo
     } = props.selectCrops
 
@@ -33,11 +33,11 @@ const CropsCardInfo = (props) => {
                     <ArrowLeftIcon size="35" color="white" />
                 </TouchableOpacity>
             </View>
-            <Text className="mt-2 bg-green-700 text-2xl text-white font-bold text-center">{Crops}</Text>
+            <Text className="mt-2 bg-green-700 text-2xl text-white font-bold text-center">{Crops.charAt(0).toUpperCase() + Crops.slice(1)}</Text>
             <Image className="mt-2 w-full h-64" source={{ uri: photo }} />
             <View >
                 <View className=" w-full h-full bg-white opacity-50  absolute" />
-                <ScrollView className="p-3 mb-72">
+                <ScrollView className="p-3 h-[450px]">
 
                     <Text className="text-green-950 font-bold text-xl">Site Selection: </Text>
                     <Text className="text-black font-bold ">{Site_Selection}</Text>
@@ -70,8 +70,8 @@ const CropsCardInfo = (props) => {
                     <Text className="text-black font-bold">{Harvesting}</Text>
 
                     <Text className="text-green-950 font-bold text-xl">Threshing Processin: </Text>
-                    <Text className="text-black font-bold">{Threshing_Processin}</Text>
-                    
+                    <Text className="text-black font-bold">{Threshing_Processing}</Text>
+                    <Text className="mt-8"></Text>
                 </ScrollView>
             </View>
 
