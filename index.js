@@ -2,15 +2,18 @@
  * @format
  */
 
-import {AppRegistry} from 'react-native';
+import { AppRegistry } from 'react-native';
 import App from './App';
-import {name as appName} from './app.json';
+import { name as appName } from './app.json';
 import { AuthProvider } from './src/components/Auth/AuthProvider';
+import { TopDisProvider } from './src/components/Auth/TopDisProvider';
 
-const AppWrapper =()=>{
-    return(
+const AppWrapper = () => {
+    return (
         <AuthProvider>
-            <App />
+            <TopDisProvider>
+                <App />
+            </TopDisProvider>
         </AuthProvider>
     )
 }

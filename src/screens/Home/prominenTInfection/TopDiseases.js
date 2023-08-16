@@ -1,39 +1,31 @@
 import { View, Text, TouchableOpacity, ImageBackground, Image, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { ArrowLeftIcon } from 'react-native-heroicons/solid'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { TopDisContext } from '../../../components/Auth/TopDisProvider'
+import GoBack from '../../../components/GoBack';
 
-const DiscardInfo = (props) => {
-  const {
-    name,
-    introduction,
-    causes_and_symptoms,
-    understanding_lifecycle_spread,
-    preventive_measures,
-    cultural_practices_protection,
-    exploring_resistant_varieties,
-    when_fungicides_come,
-    organic_approaches,
-    real_life_success_story,
-    conclusion,
-    references_and_resources,
-    photo
-  } = props.selectDis
-
-  const handleBack = () => {
-    props.setSelectDis(false)
-  }
+const TopDiseases = () => {
+    const {selectTopDis} = useContext(TopDisContext);
+    const {
+        name,
+        introduction,
+        causes_and_symptoms,
+        understanding_lifecycle_spread,
+        preventive_measures,
+        cultural_practices_protection,
+        exploring_resistant_varieties,
+        when_fungicides_come,
+        organic_approaches,
+        real_life_success_story,
+        conclusion,
+        references_and_resources,
+        photo
+      } = selectTopDis
   return (
     <SafeAreaView>
       <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrack.jpg')} resizeMode="cover">
-        <View className="flex-row justify-start">
-          <TouchableOpacity
-            onPress={() => handleBack()}
-            className="bg-green-800 h-8 w-16 rounded-tr-2xl rounded-bl-2xl ml-2 mt-2 items-center justify-center"
-          >
-            <ArrowLeftIcon size="35" color="white" />
-          </TouchableOpacity>
-        </View>
+        <GoBack></GoBack>
         <Text className="mt-2 bg-green-700 text-2xl text-white font-bold text-center">{name.replace(/_/g, ' ')}</Text>
         <Image className="mt-2 w-full h-64" source={{ uri: photo }} />
         <View >
@@ -42,7 +34,7 @@ const DiscardInfo = (props) => {
            
             <Text className="text-black font-bold ">{introduction}</Text>
 
-            <Text className="text-black font-bold text-xl">Causes and symptoms: </Text>
+            <Text className="text-black font-bold text-xl">Causes and symptoms </Text>
             <Text className="text-black font-bold">{causes_and_symptoms}</Text>
 
             <Text className="text-black font-bold text-xl">Understanding Lifecycle Spread</Text>
@@ -81,4 +73,4 @@ const DiscardInfo = (props) => {
   )
 }
 
-export default DiscardInfo
+export default TopDiseases

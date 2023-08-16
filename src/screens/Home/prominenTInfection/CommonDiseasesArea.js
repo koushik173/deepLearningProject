@@ -1,9 +1,9 @@
 import { View, Text , ScrollView, TouchableOpacity} from 'react-native'
 import React from 'react'
-import FruitCard from '../../../components/FruitCard'
-import { featuredFruits } from '../../../../Assets/Data/Data'
+import TopDisCard from '../../../components/TopDisCard'
+import { topDiseases } from '../../../../Assets/Data/Data'
 import { useNavigation } from '@react-navigation/native';
-import { ArrowLeftIcon, ArrowRightIcon } from 'react-native-heroicons/solid';
+import { ArrowRightIcon } from 'react-native-heroicons/solid';
 
 const CommonDiseasesArea = () => {
     const navigation = useNavigation();
@@ -22,9 +22,9 @@ const CommonDiseasesArea = () => {
             </View>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 {
-                    featuredFruits.map((fruit, index) => {
+                    topDiseases.map((diseases, index) => {
                         return (
-                            <FruitCard key={index} fruit={fruit}></FruitCard>
+                            <TopDisCard key={index} diseases={diseases}></TopDisCard>
                         )
                     })
                 }

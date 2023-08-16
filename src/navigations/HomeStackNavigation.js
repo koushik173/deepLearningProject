@@ -10,6 +10,7 @@ import PlantTypes from '../screens/Home/plantQuest/PlantTypes';
 import Learn from '../screens/Home/Discover/Learn';
 import Blog from '../screens/Home/Discover/Blog';
 import About from '../screens/Home/Discover/About';
+import TopDiseases from '../screens/Home/prominenTInfection/TopDiseases';
 
 const HomeStack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ const HomeStackNavigation = () => {
             <HomeStack.Screen name='HomeScreen' component={HomeScreen} />
             <HomeStack.Screen name='TrackDiseases' component={TrackDisases} />
             <HomeStack.Screen name='ProminenTinfection' component={ProminenTinfection} />
+            <HomeStack.Screen name='TopDiseases' component={TopDiseases} />
             <HomeStack.Screen name='Consultation' component={Consultation} />
             <HomeStack.Screen name='PlantRecomend' component={PlantRecomend} />
             <HomeStack.Screen name='PlantTypes' component={PlantTypes} />

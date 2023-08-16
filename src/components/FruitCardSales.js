@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 
-const FruitCardSales = ({fruit}) => {
+const TopDisCardSales = ({fruit}) => {
   return (
     <View className="mr-6">
         <TouchableOpacity  className="flex-row justify-center -mb-9 shadow-lg z-20" >
@@ -22,4 +22,4 @@ const FruitCardSales = ({fruit}) => {
   )
 }
 
-export default FruitCardSales
+export default TopDisCardSales

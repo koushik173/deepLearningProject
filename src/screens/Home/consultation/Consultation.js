@@ -8,7 +8,7 @@ import ConDetails from './ConDetails';
 
 const Consultation = () => {
   const [agriculerist, setAgriculerist]= useState([]);
-  const [selectAgrRst, setSelectAgrRst]= useState([]);
+  const [selectAgrRst, setSelectAgrRst]= useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
