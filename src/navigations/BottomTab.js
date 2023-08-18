@@ -6,43 +6,44 @@ import HomeStackNavigation from './HomeStackNavigation';
 import SearchStackNavigation from './SearchStackNavigation';
 import BlogStackNavigation from './BlogStackNavigation';
 import ProfileStackNavigation from './ProfileStackNavigation';
+import { Image, Text } from 'react-native'
 const Tab = createBottomTabNavigator();
-
+ 
 const BottomTab = () => {
   return (
     <Tab.Navigator
     initialRouteName="HomeTab"
     screenOptions={() => ({
         headerShown: false,
-        tabBarInactiveTintColor: COLORS.dark,
-        tabBarActiveTintColor: COLORS.primary,
-        tabBarInactiveBackgroundColor: COLORS.primary
+        tabBarInactiveTintColor: "#1e1f1d",
+        tabBarActiveTintColor: "#1e1f1d",
+        tabBarInactiveBackgroundColor: "#5fde91"
     })}
     >
     <Tab.Screen name="HomeTab" component={HomeStackNavigation} options={{
-          tabBarLabel: 'Home',
+          tabBarLabel:()=>(<Text className="font-bold text-black">Home</Text>) ,
           tabBarIcon: () => (
-            <HomeIcon size="25" color="green" />
+            <Image className="w-10 h-10 " source={require('../../Assets/images/home.png')} />
           ),
         }}/>
 
     <Tab.Screen name="SearchTab" component={SearchStackNavigation} options={{
-          tabBarLabel: 'Search',
+          tabBarLabel:()=>(<Text className="font-bold text-black">Search</Text>) ,
           tabBarIcon: () => (
-            <MagnifyingGlassCircleIcon  size="25"  color="green" />
+            <Image className="w-8 h-8" source={require('../../Assets/images/searchh.png')} />
           ),
         }} />
     <Tab.Screen name="BlogTab" component={BlogStackNavigation} options={{
-          tabBarLabel: 'BLog',
+          tabBarLabel:()=>(<Text className="font-bold text-black">Blog</Text>) ,
           tabBarIcon: () => (
-            <CubeTransparentIcon  size="25"  color="green" />
+            <Image className="w-10 h-10 top-1" source={require('../../Assets/images/blogg.png')} />
           ),
         }} />
       
       <Tab.Screen name="ProfileTab" component={ProfileStackNavigation} options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel:()=>(<Text className="font-bold text-black">Profile</Text>),
           tabBarIcon: () => (
-            <UserCircleIcon  size="25"  color="green" />
+            <Image className="w-8 h-8" source={require('../../Assets/images/profile.png')} />
           ),
         }} />
 

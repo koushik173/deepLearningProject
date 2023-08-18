@@ -30,4 +30,4 @@ const ROUTES= {
     grayLight: '#ccc',
     black: '#0a0a0a',
   }; 
-   export {ROUTES, COLORS};
+   export {ROUTES, COLORS}; 

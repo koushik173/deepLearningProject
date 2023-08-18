@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
 import React from 'react';
 import Onboarding from 'react-native-onboarding-swiper';
 
@@ -19,37 +19,35 @@ const OnboardingScreen = () => {
                 onSkip={handleDone}
                 pages={[
                     {
-                        backgroundColor: '#FF8B02',
+                        backgroundColor: '#C3D7B9',
                         image: (
-                            <View style={styles.lottie}>
-                                {/* <LottieView source={require("../../../Assets/Animation/onboardingAnimation.json")} autoPlay loop /> */}
-                                {/* <Lottie source={require('../../Assets/Animation/onboardingAnimation.json')} autoPlay loop /> */}
+                            <View>
+                               <Image className="w-96 h-96" source={require('../../../Assets/images/hello.png')} />
                             </View>
                         ),
-                        title: 'Onboarding',
-                        subtitle: 'Done with Reaact Native Onboarding Swipper'
+                        title: <Text className="text-[40px] text-black font-bold">Hello !</Text>,
+                        subtitle: <Text className="text-2xl text-black font-bold">Welcome To Angrosheild</Text>
                     },
                     {
-                        backgroundColor: '#FF8B02',
+                        backgroundColor: '#638467',
                         image: (
-                            <View style={styles.lottie}>
-                                {/* <LottieView source={require('../../../Assets/Animation/animation_lkc8ccy5.json')} autoPlay loop /> */}
+                            <View>
+                                <Image className="w-[400px] h-[450px]" source={require('../../../Assets/images/harvest.png')} />
+                            </View>
+                        ),
+                        title: <Text className="text-[40px] text-white font-bold">Harvest</Text>,
+                        subtitle: <Text className="text-lg text-white font-bold">Let's Explore Agriculture World With Agrosheild </Text>
+                    },
+                    {
+                        backgroundColor: '#3D6641',
+                        image: (
+                            <View>
+                                <Image className="w-[400px] h-[450px]" source={require('../../../Assets/images/explore.png')} />
 
                             </View>
                         ),
-                        title: 'Harvest',
-                        subtitle: 'Done with Reaact Native Onboarding Swipper'
-                    },
-                    {
-                        backgroundColor: '#FF8B02',
-                        image: (
-                            <View style={styles.lottie}>
-                                {/* <LottieView source={require('../../../Assets/Animation/animation_lkc89tt9.json')} autoPlay loop /> */}
-
-                            </View>
-                        ),
-                        title: 'Third Year Project',
-                        subtitle: 'Done with Reaact Native Onboarding Swipper'
+                        title: <Text className="text-3xl text-white font-bold">Explore Diseases</Text>,
+                        subtitle: <Text className="text-lg text-white font-bold">Let's Catch A Virus From The Harvest </Text>
                     },
                 ]}
             >

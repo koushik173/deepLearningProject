@@ -6,7 +6,7 @@ import { request, PERMISSIONS, RESULTS, check } from 'react-native-permissions';
 import axios from 'axios';
 import DiscardInfo from '../prominenTInfection/DiscardInfo';
 
-const TrackDisases = () => {
+const VegFreshness = () => {
   const [image, setImage] = useState('');
   const [photoFile, setphotoFile] = useState();
   const [diseases, setDiseases] = useState('');
@@ -116,7 +116,7 @@ const TrackDisases = () => {
         formData.append('file', params)
         console.log("image sending by axios...");
 
-        let res = await axios.post('http://10.0.2.2:8000/plantLeafPredict',
+        let res = await axios.post('http://10.0.2.2:8000/freshness',
           formData,
           {
             headers: {
@@ -150,40 +150,21 @@ const TrackDisases = () => {
 
   }
 
- const disSolution = async ()=>{
-  // console.log(diseases.class);
-  try {
-    const res = await axios.get(`http://10.0.2.2:5000/search_diseases/${diseases.class}`);
-    // console.log("name:  ",res.data[0].name);
-    setSelectDis(res.data[0]);
-
-  } catch (error) {
-    console.log(error.message);
-    Alert.alert('', error.message, [
-      { text: 'OK', style: 'cancel' },
-    ]);
-  }
- }
-
   return (
     <View>
-      <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrack.jpg')} resizeMode="cover">
-        {
-          selectDis? <DiscardInfo key={selectDis._id} selectDis={selectDis} setSelectDis={setSelectDis} ></DiscardInfo>:
-        
+      <ImageBackground className="w-full h-full " source={require('../../../../Assets/images/bgTrackf.jpg')} resizeMode="cover">       
         <View>
           <GoBack></GoBack>
           <View className="mt-3 ml-3">
-            <Text className="text-white font-bold">DIAGNOSIS AND TREATMENT</Text>
-            <Text className="text-3xl bg-green-900 p-1 text-white font-bold">Plant Leaf Diseases</Text>
-            <Text className='font-bold italic text-white'>Trace Plant Diseases by capturing leaf photos.</Text>
+            <Text className="text-3xl bg-green-900 p-1 text-white font-bold">Explore Veg Freshness</Text>
+            <Text className='font-bold italic text-white'>Quickly determine the freshness of vegetables by capturing photos.</Text>
           </View>
 
           <View className='items-center mt-6'>
             <View className="w-80 h-56  rounded-2xl shadow-lg shadow-white border-4 border-green-950">
               {
                 image ? <Image className="w-full h-full" source={{ uri: image }} /> :
-                  <Image className="w-full h-full rounded-xl" source={{ uri: 'https://i.ibb.co/Q8JXsH6/image.png' }} />
+                  <Image className="w-full h-full rounded-xl" source={require('../../../../Assets/images/freshVeg.png')} />
               }
             </View>
           </View>
@@ -201,19 +182,16 @@ const TrackDisases = () => {
 
           {!photoFile && <View>
             {/* <View className='rounded-tr-2xl rounded-br-2xl -top-8 w-44 h-16 bg-gray-50 opacity-50 absolute'></View> */}
-            <Text className='text-green-100 font-bold ml-12 text-lg -top-5'>Please Choose a leaf image...</Text>
+            <Text className='text-green-100 font-bold ml-12 text-lg -top-5'>Please Choose a vegetables image...</Text>
           </View>}
-
-
-
 
           {/* //diseases area */}
           {
             diseases && <View className='flex-row justify-between mt-8'>
               <View >
-                <Text className=" text-center border-green-950 mr-5 ml-2 text-lg  p-2 rounded-tl-2xl rounded-br-2xl  text-white bg-green-700 font-bold">Diseases Name</Text>
+                <Text className=" text-center border-green-950 mr-5 ml-2 text-lg  p-2 rounded-tl-2xl rounded-br-2xl  text-white bg-green-700 font-bold">Freshness Types</Text>
                 <View className='rounded-tr-2xl rounded-br-2xl  w-56 h-16 bg-gray-50 opacity-50 top-14 absolute'></View>
-                <View>
+                <View className="top-3">
                   <Text className="w-48 h-14 ml-1 mr-1 mt-3 text-lg text-center text-red-700 font-bold">{diseases.class.replace(/_/g, ' ')}</Text>
                 </View>
               </View>
@@ -243,18 +221,17 @@ const TrackDisases = () => {
 
               {diseases &&
                 <View className='flex-row justify-between'>
-                  <TouchableOpacity onPress={() => disSolution()} className="w-44 h-10 justify-center rounded-tr-2xl rounded-br-2xl  bg-green-900" ><Text className="text-xl text-center font-bold text-white italic">Solution..</Text></TouchableOpacity>
-                  <TouchableOpacity onPress={() => imageClear()} className="w-44 h-10 justify-center rounded-tl-2xl rounded-bl-2xl  bg-green-900" ><Text className="text-xl text-center font-bold text-white italic">Clear..</Text></TouchableOpacity>
+                  <TouchableOpacity onPress={() => imageClear()} className="w-44 h-10 justify-center rounded-tr-2xl rounded-br-2xl  bg-green-900" ><Text className="text-xl text-center font-bold text-white italic">Clear..</Text></TouchableOpacity>
                 </View>}
               </View>
             </View>
           }
 
 
-        </View>}
+        </View>
       </ImageBackground>
     </View>
   )
 }
 
-export default TrackDisases
+export default VegFreshness

@@ -11,8 +11,6 @@ import PlantQuestArea from './plantQuest/PlantQuestArea';
 import Footer from './Footer';
 import CarePlantArea from './trackDiseases/CheckPlantArea';
 
-
-
 const HomeScreen = () => {
   return (
     <SafeAreaView className="flex-1 bg-white ml-2">

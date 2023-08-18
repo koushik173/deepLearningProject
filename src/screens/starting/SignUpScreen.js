@@ -134,7 +134,7 @@ const SignUpScreen = () => {
 
 
     return (
-        <ScrollView className="flex-1 bg-green-200">
+        <ScrollView className="flex-1 bg-emerald-700">
 
             <SafeAreaView>
                 <GoBack></GoBack>
@@ -146,13 +146,11 @@ const SignUpScreen = () => {
                 </View>
             </SafeAreaView>
 
-            <View className="flex-1 bg-green-300 rounded-t-[40px]">
-                <Text className="font-bold text-black text-2xl p-3 text-center">Login to your account</Text>
-                <View className="bg-white rounded-t-[40px] p-5">
-                    <SocialLogin></SocialLogin>
-                    <Text className="text-center text-black text-lg opacity-50">or use your email account</Text>
+            <View className="flex-1 bg-green-300 rounded-[40px]">
+                <Text className="font-bold text-black text-2xl p-5 text-center">SignUp to your account</Text>
+                <View className="bg-white rounded-[40px] p-5">
 
-                    <View className="form space-y-6 mt-2">
+                    <View className="form space-y-6 mt-8">
                         <View className="">
                             <TextInput
                                 className={`p-3 pl-6 rounded-xl mb-3 border ${data.isValidName?'border-green-700': 'border-red-700'} text-black text-lg `}

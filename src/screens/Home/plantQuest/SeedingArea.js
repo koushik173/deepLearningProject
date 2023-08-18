@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const PlantTypes = () => {
+const SeedingArea = () => {
   return (
     <View>
-      <Text>PlantTypes</Text>
+      <Text>SeedingArea</Text>
     </View>
   )
 }
 
-export default PlantTypes
+export default SeedingArea

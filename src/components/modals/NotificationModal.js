@@ -37,7 +37,7 @@ const NotificationModal = () => {
                     </ScrollView>
                     
                 </View>
-            </Modal>
+            </Modal> 
 
         </View>
     )

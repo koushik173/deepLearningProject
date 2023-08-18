@@ -5,7 +5,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 
 import GoBack from '../../components/GoBack';
-import SocialLogin from './SocialLogin';
 import { AuthContext } from '../../components/Auth/AuthProvider';
 import { EyeIcon, EyeSlashIcon } from 'react-native-heroicons/solid';
 import Loading from '../../components/loading/Loading';
@@ -125,7 +124,7 @@ const LoginScreen = () => {
 
 
     return (
-        <ScrollView className="flex-1 bg-green-200">
+        <ScrollView className="flex-1 bg-emerald-700">
 
             <SafeAreaView>
                 <GoBack></GoBack>
@@ -137,13 +136,11 @@ const LoginScreen = () => {
                 </View>
             </SafeAreaView>
 
-            <View className="flex-1 bg-green-300 rounded-t-[40px]">
-                <Text className="font-bold text-black text-2xl p-3 text-center">Login to your account</Text>
-                <View className="bg-white rounded-t-[40px] p-5 mt-2">
-                    <SocialLogin></SocialLogin>
-                    <Text className="text-center text-black text-lg opacity-50">or use your email account</Text>
+            <View className="flex-1 bg-green-300 rounded-[40px] ">
+                <Text className="font-bold text-black text-2xl p-6 text-center">Login to your account</Text>
+                <View className="bg-white rounded-[40px] p-5 ">
 
-                    <View className="form space-y-7 mt-8">
+                    <View className="form space-y-7 mt-6">
                         <View className="mt-2">
                             <TextInput
                                 className={`p-3 pl-6 rounded-xl mb-3 border ${data.isValidUser?'border-green-700': 'border-red-700'} text-black text-lg `}

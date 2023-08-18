@@ -15,7 +15,7 @@ const CarePlantArea = () => {
         </View>
         <TouchableOpacity onPress={() => navigation.navigate('TrackDiseases')} 
             className="w-96 h-20 rounded-full -top-12 ml-4  shadow-lg shadow-green-600 ">
-            <Text className="text-xl font-bold text-center mt-6 text-green-800">Let's Track</Text>
+            <Text className="text-xl font-bold text-center mt-6 text-green-800">Let's Scan</Text>
         </TouchableOpacity>
     </View>
   )

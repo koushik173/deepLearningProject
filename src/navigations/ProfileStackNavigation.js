@@ -1,20 +1,15 @@
-import { View, Text, TouchableOpacity } from 'react-native'
-import React, { useContext, useState } from 'react';
-import { AuthContext } from '../components/Auth/AuthProvider';
+import React from 'react';
+import UserProfile from '../screens/profile/UserProfile';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-
+const ProfileStack = createNativeStackNavigator();
 const ProfileStackNavigation = () => {
-  const {SignOut, user} = useContext(AuthContext);
-  
-
   return (
-    <View className="flex-1 justify-center items-center">
-      <Text>Welcome to</Text>
-      <Text className="m-2 text-lg text-bold text-black">{user.displayName}</Text>
-      <TouchableOpacity onPress={() =>SignOut()}>
-        <Text className="bg-green-300 rounded-3xl  text-center text-black w-28 p-4 text-lg font-bold">LoginOut</Text>
-      </TouchableOpacity>
-    </View>
+    <ProfileStack.Navigator initialRouteName='UserProfile' screenOptions={{
+        headerShown: false
+    }}>
+        <ProfileStack.Screen name='UserProfile' component={UserProfile} />
+    </ProfileStack.Navigator>
   )
 }
 

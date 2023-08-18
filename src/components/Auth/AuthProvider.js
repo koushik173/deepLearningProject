@@ -1,6 +1,6 @@
-import React, { createContext, useState} from 'react';
+import React, { createContext, useState } from 'react';
 import auth from '@react-native-firebase/auth';
-import {Alert } from 'react-native';
+import { Alert } from 'react-native';
 // import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-google-signin/google-signin';
 import axios from 'axios';
 
@@ -14,12 +14,9 @@ export const AuthProvider = ({ children }) => {
   const StopLoading = () => { setLoading(false) }
   const StopError = () => { setuserError(false) }
 
-  
-  
-
   const SignUp = async (name, email, password) => {
 
-    console.log(name, email, password);
+    // console.log(name, email, password);
     setuserError('');
     setLoading(true);
 
@@ -58,7 +55,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     try {
       const res = await auth().signInWithEmailAndPassword(email, password);
-      console.log(res);
+      // console.log(res);
       //check user verified or not
       if (res.user.emailVerified) {
         console.log('Login successful');
@@ -79,11 +76,11 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   };
 
-  const resetPassword = async(email)=>{
-    console.log("For Reset: ",email);
+  const resetPassword = async (email) => {
+    console.log("For Reset: ", email);
     setLoading(true);
     setuserError('');
-    
+
     try {
       await auth().sendPasswordResetEmail(email);
       Alert.alert('Reset Password link Sent!', 'Please follow the instructions in the email', [
@@ -92,12 +89,12 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
       setuserError(error.message);
-      
+
     }
     setLoading(false);
   }
 
-  const SignOut = async() => {
+  const SignOut = async () => {
     try {
       res = await auth().signOut();
       console.log('User signed out!');
@@ -108,42 +105,14 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const signInWithGoogle = async () => {
-    console.log("working not");
-    // useEffect(() => {
-    //   GoogleSignin.configure({
-    //     webClientId: 'AIzaSyDY_SZPdPgT4jFONv5NJ5-BG1JDCaXD9eA', 
-    //   });
-    // }, []);
-
-    // try {
-    //   await GoogleSignin.hasPlayServices();
-    //   const { idToken } = await GoogleSignin.signIn();
-    //   const googleCredential = auth.GoogleAuthProvider.credential(idToken);
-
-    //   await auth().signInWithCredential(googleCredential);
-    //   console.log('Google login success');
-    // } catch (error) {
-    //   if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-    //     console.log('Google login canceled');
-    //   } else if (error.code === statusCodes.IN_PROGRESS) {
-    //     console.log('Google login is in progress');
-    //   } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-    //     console.log('Play services are not available');
-    //   } else {
-    //     console.error('Google login error:', error);
-    //   }
-    // }
-  };
-
-  const saveUserInfo = async(name, email)=>{
-    const userData={name, email}
+  const saveUserInfo = async (name, email) => {
+    const userData = { name, email }
     try {
       const response = await axios.post('http://10.0.2.2:5000/users', userData);
-      console.log('Server response: ', response.data);
+      // console.log('Server response: ', response.data);
     } catch (error) {
-      console.log("Server: ",error.message);
-      // setuserError(error.message)
+      console.log("Server: ", error.message);
+      setuserError(error.message)
     }
   }
 
@@ -159,9 +128,6 @@ export const AuthProvider = ({ children }) => {
     StopLoading,
     StopError,
     resetPassword,
-    signInWithGoogle,
-    
-  
 
   };
 
