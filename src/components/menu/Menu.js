@@ -41,7 +41,7 @@ const Menu = () => {
               <Image className="w-8 h-8 ml-3 mr-3" source={require('../../../Assets/images/homeBar.png')} />
               <Text className="text-white font-bold text-xl ">Home</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleNav('UserProfile')} className="flex-row rounded-full p-2 bg-green-800 items-center">
+            <TouchableOpacity onPress={() => handleNav('Profile')} className="flex-row rounded-full p-2 bg-green-800 items-center">
               <Image className="w-8 h-8 ml-3 mr-3" source={require('../../../Assets/images/profilee.png')} />
               <Text className="text-white font-bold text-xl ">Profile</Text>
             </TouchableOpacity>
@@ -52,10 +52,6 @@ const Menu = () => {
             <TouchableOpacity onPress={() => handleNav('Learn')} className="flex-row rounded-full p-2 bg-green-800 items-center">
               <Image className="w-8 h-8 ml-3 mr-3" source={require('../../../Assets/images/book.png')} />
               <Text className="text-white font-bold text-xl ">Learn</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleNav('Blog')} className="flex-row rounded-full p-2 bg-green-800 items-center">
-              <Image className="w-8 h-8 ml-3 mr-3" source={require('../../../Assets/images/bloggg.png')} />
-              <Text className="text-white font-bold text-xl ">Blog</Text>
             </TouchableOpacity>
           </View>
 

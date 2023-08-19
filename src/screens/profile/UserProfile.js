@@ -1,11 +1,11 @@
-import { View, Text, ImageBackground, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native'
+import { View, Text, ImageBackground, Image, TouchableOpacity, TextInput, ScrollView, Alert } from 'react-native'
 import React, { useContext, useState } from 'react'
 import GoBack from '../../components/GoBack'
 import { AuthContext } from '../../components/Auth/AuthProvider';
 import { useForm, Controller } from "react-hook-form"
 
 const UserProfile = () => {
-  const { SignOut, user } = useContext(AuthContext);
+  const { SignOut, user, setUser } = useContext(AuthContext);
   const [editName, setEditName] = useState(false);
 
   const { control, handleSubmit, reset, formState: { errors } } = useForm({
@@ -14,21 +14,30 @@ const UserProfile = () => {
     },
   })
 
-  const handleUpdateUser=(uname)=>{
-    console.log(uname.Uname);
-    setEditName(false)
+  // const [user, setUser] = useState(auth().currentUser);
+  // Other state variables and functions...
+
+  const handleUpdateUser = async (uname) => {
+    const name = uname.Uname;
+    setEditName(false);
+
     try {
-      user.updateProfile({
-        displayName: uname.Uname,
-      })
+      await user.updateProfile({
+        displayName: name,
+      });
+
+      // Update the user state with the updated display name
+      setUser((prevUser) => ({
+        ...prevUser,
+        displayName: name,
+      }));
     } catch (error) {
       console.log(error.message);
-      Alert.alert('', error.message, [
-        { text: 'OK', style: 'cancel' },
-      ]);
+      Alert.alert('', error.message, [{ text: 'OK', style: 'cancel' }]);
     }
     reset();
-  }
+  };
+  
   const handleCancel=()=>{
     setEditName(false);
     reset();
@@ -53,11 +62,11 @@ const UserProfile = () => {
         </View>
         <View className="p-3 items-center -top-2">
           <View className="w-80 h-16 rounded-xl bg-white absolute opacity-40" />
-          <Text className="text-white font-bold italic">+99 994949494949</Text>
+          <Text className="text-white font-bold italic">+880 1345455687</Text>
           <Text className="text-white font-bold italic">{user.email}</Text>
         </View>
         {
-          editName ? 
+          editName &&
           <View className="mt-5 items-center">
             <Text className="text-white font-bold text-base">Updated Name: </Text>
             <Controller control={control} rules={{
@@ -85,10 +94,6 @@ const UserProfile = () => {
             </View>
             
           </View>
-          :
-            <View>
-              <Text className="text-white text-3xl mt-1 font-bold mt-5">Bookmarks:</Text>
-            </View>
         }
         </ScrollView>
       </ImageBackground>

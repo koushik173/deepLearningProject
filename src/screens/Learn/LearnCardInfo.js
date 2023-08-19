@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const SeedingArea = () => {
+const LearnCardInfo = () => {
   return (
     <View>
-      <Text>SeedingArea</Text>
+      <Text>LearnCardInfo</Text>
     </View>
   )
 }
 
-export default SeedingArea
+export default LearnCardInfo

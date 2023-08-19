@@ -51,7 +51,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const Login = async (email, password) => {
-    setuserError('');
+    setuserError('')
     setLoading(true);
     try {
       const res = await auth().signInWithEmailAndPassword(email, password);

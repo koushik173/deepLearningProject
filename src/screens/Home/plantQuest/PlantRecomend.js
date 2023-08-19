@@ -57,11 +57,11 @@ const PlantRecomend = () => {
               <Text className="font-bold text-white text-2xl mt-2 bg-green-700 p-1">Plant Recommendation</Text>
               <View className="flex flex-wrap h-[350px] gap-2 ml-8 mt-5">
                 <View>
-                  <Text className="text-white ml-5 font-bold">Nitrogen</Text>
+                  <Text className="text-white ml-5 font-bold">Nitrogen (kg/ha)</Text>
                   <Controller control={control} rules={{
                     required: { value: true, message: "This is required" }, pattern: {
-                      value: /^-?\d+(\.\d+)?$/,
-                      message: "Enter only number",
+                      value: /^([5-9][0-9]|1[0-4][0-9]|150)$/ ,
+                      message: "Enter only number(50-150)",
                     }
                   }} render={({ field: { onChange, onBlur, value } }) => (
                     <TextInput
@@ -79,11 +79,11 @@ const PlantRecomend = () => {
                 </View>
 
                 <View>
-                  <Text className="text-white ml-5 font-bold">Phosphorus </Text>
+                  <Text className="text-white ml-5 font-bold">Phosphorus (kg/ha)</Text>
                   <Controller control={control} rules={{
                     required: { value: true, message: "This is required" }, pattern: {
-                      value: /^-?\d+(\.\d+)?$/,
-                      message: "Enter only number",
+                      value: /^([5-9][0-9]|[6-9][0-9]|100)$/,
+                      message: "Enter only number(50-100)",
                     }
                   }} render={({ field: { onChange, onBlur, value } }) => (
                     <TextInput
@@ -100,11 +100,11 @@ const PlantRecomend = () => {
                 </View>
 
                 <View>
-                  <Text className="text-white ml-5 font-bold">Potassium</Text>
+                  <Text className="text-white ml-5 font-bold">Potassium  (kg/ha)</Text>
                   <Controller control={control} rules={{
                     required: { value: true, message: "This is required" }, pattern: {
-                      value: /^-?\d+(\.\d+)?$/,
-                      message: "Enter only number",
+                      value: /^(3[0-9]|[4-5][0-9]|60)$/,
+                      message: "Enter only number(30-60)",
                     }
                   }} render={({ field: { onChange, onBlur, value } }) => (
                     <TextInput
@@ -121,11 +121,11 @@ const PlantRecomend = () => {
                 </View>
 
                 <View>
-                  <Text className="text-white ml-5 font-bold">Temperature</Text>
+                  <Text className="text-white ml-5 font-bold">Temperature (°C)</Text>
                   <Controller control={control} rules={{
                     required: { value: true, message: "This is required" }, pattern: {
-                      value: /^-?\d+(\.\d+)?$/,
-                      message: "Enter only number",
+                      value: /^(2[0-9]|3[0-9]|40)$/,
+                      message: "Enter only number(20-40)",
                     }
                   }} render={({ field: { onChange, onBlur, value } }) => (
                     <TextInput
@@ -142,11 +142,11 @@ const PlantRecomend = () => {
                 </View>
 
                 <View>
-                  <Text className="text-white ml-5 font-bold">Humidity</Text>
+                  <Text className="text-white ml-5 font-bold">Humidity (%)</Text>
                   <Controller control={control} rules={{
                     required: { value: true, message: "This is required" }, pattern: {
-                      value: /^-?\d+(\.\d+)?$/,
-                      message: "Enter only number",
+                      value: /^(6[0-9]|7[0-9]|8[0-9]|90)$/,
+                      message: "Enter only number(60-90)",
                     }
                   }} render={({ field: { onChange, onBlur, value } }) => (
                     <TextInput
@@ -166,8 +166,8 @@ const PlantRecomend = () => {
                   <Text className="text-white ml-5 font-bold">PH</Text>
                   <Controller control={control} rules={{
                     required: { value: true, message: "This is required" }, pattern: {
-                      value: /^-?\d+(\.\d+)?$/,
-                      message: "Enter only number",
+                      value: /^(4|5|6|7|8|9|10)$/,
+                      message: "Enter only number(4-10)",
                     }
                   }} render={({ field: { onChange, onBlur, value } }) => (
                     <TextInput
@@ -184,11 +184,11 @@ const PlantRecomend = () => {
                 </View>
 
                 <View>
-                  <Text className="text-white ml-5 font-bold">Rainfall</Text>
+                  <Text className="text-white ml-5 font-bold">Rainfall (cm)</Text>
                   <Controller control={control} rules={{
                     required: { value: true, message: "This is required" }, pattern: {
-                      value: /^-?\d+(\.\d+)?$/,
-                      message: "Enter only number",
+                      value: /^(5[0-9]|[6-9][0-9]|1[0-1][0-9]|120)$/,
+                      message: "Enter only number(50-120)",
                     }
                   }} render={({ field: { onChange, onBlur, value } }) => (
                     <TextInput

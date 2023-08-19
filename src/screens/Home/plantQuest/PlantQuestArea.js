@@ -46,20 +46,6 @@ const PlantQuestArea = () => {
                 </View>
                 <Image className="w-48 h-48 -top-8" source={require('../../../../Assets/images/plantTypes.png')} />
             </View>
-
-            <View className="flex justify-center items-center">
-                <View className="bg-cyan-600 w-56 h-16 -left-4 rounded-tr-3xl rounded-bl-3xl flex flex-row">
-                    <TouchableOpacity
-                        onPress={() => navigation.navigate('Seeding')}
-                        className="bg-cyan-900 w-24 h-8 mt-4 ml-3 justify-center rounded-full "
-                    >
-                        <Text className="font-bold text-center text-xs text-white">Find Seedling</Text>
-                    </TouchableOpacity>
-                    <View>
-                        <Image className="w-28 h-32 ml-1 -top-16" source={require('../../../../Assets/images/chilli.png')} />
-                    </View>
-                </View>
-            </View>
         </View>
     )
 }
