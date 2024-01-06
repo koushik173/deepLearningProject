@@ -27,7 +27,7 @@ const TrackDisases = () => {
           mediaType: 'photo',
 
         }).then(image => {
-          console.log(image.path);
+          // console.log(image.path);
           setImage(image.path);
           setphotoFile(image);
         }).catch(error => {

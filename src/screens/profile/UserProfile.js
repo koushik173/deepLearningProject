@@ -5,7 +5,7 @@ import { AuthContext } from '../../components/Auth/AuthProvider';
 import { useForm, Controller } from "react-hook-form"
 
 const UserProfile = () => {
-  const { SignOut, user, setUser } = useContext(AuthContext);
+  const { user, setUser } = useContext(AuthContext);
   const [editName, setEditName] = useState(false);
 
   const { control, handleSubmit, reset, formState: { errors } } = useForm({
@@ -14,8 +14,6 @@ const UserProfile = () => {
     },
   })
 
-  // const [user, setUser] = useState(auth().currentUser);
-  // Other state variables and functions...
 
   const handleUpdateUser = async (uname) => {
     const name = uname.Uname;
@@ -48,6 +46,7 @@ const UserProfile = () => {
         <ScrollView>
         <GoBack></GoBack>
         <Text className="bg-green-700 text-white text-3xl mt-1 font-bold text-center p-2">Profile</Text>
+       
         {
           !editName && <TouchableOpacity onPress={() => setEditName(!editName)} className="flex-row justify-end top-6 -left-8">
           <Image className="w-12 h-12 absolute" source={require('../../../Assets/images/editProfile.png')} />
@@ -69,6 +68,7 @@ const UserProfile = () => {
           editName &&
           <View className="mt-5 items-center">
             <Text className="text-white font-bold text-base">Updated Name: </Text>
+            
             <Controller control={control} rules={{
               required: { value: true, message: "This is required" }
             }} render={({ field: { onChange, onBlur, value } }) => (
@@ -84,6 +84,7 @@ const UserProfile = () => {
               name="Uname"
             />
              {errors.Uname && <Text className="text-center text-red-600">{errors.Uname.message}</Text>}
+             
             <View className="flex-row justify-start mt-5">
               <TouchableOpacity onPress={handleSubmit(handleUpdateUser)} className="bg-green-800 w-36 rounded-xl">
                 <Text className="text-xl text-center text-white font-bold p-2">Update</Text>
