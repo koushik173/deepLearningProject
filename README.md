@@ -1,4 +1,4 @@
-# The app offers plant diseases recognition and recommendations based on soil components using transfer learning (EfficientNetV3) and SVM. Developed using React Native for Android. The Backend by Express.js and Python FastAP servers
+### The app offers plant diseases recognition and Crop Recommendations based on soil components using transfer learning (EfficientNetV3) and Fresh and stale classification using SVM. Developed using React Native for Android. The Backend by Express.js and Python FastAP servers.
 
 ## Here the project demo
 ![Image 1](appSS/01_.jpg)
