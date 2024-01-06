@@ -1,7 +1,8 @@
 # OSX
 #
 .DS_Store
-
+node_modules
+.env
 # Xcode
 #
 build/
@@ -64,4 +65,7 @@ yarn-error.log
 
 # testing
 /coverage
+/fastApi_server/models/*
 
+/fastApi_server/.vscode 
+/fastApi_server/__pycache__

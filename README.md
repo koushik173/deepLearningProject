@@ -1,13 +1,68 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# The app offers plant diseases recognition and recommendations based on soil components using transfer learning (EfficientNetV3) and SVM. Developed using React Native for Android. The Backend by Express.js and Python FastAP servers
 
-# Getting Started
+## Here the project demo
+![Image 1](appSS/01_.jpg)
+![Image 2](appSS/02_.jpg)
+![Image 3](appSS/03_.jpg)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+# Source Data Links
 
-## Step 1: Start the Metro Server
+## For Plant Disease:
+```bash
+https://www.kaggle.com/datasets/sadmansakibmahi/plant-disease-expert/data
+```
+## For Crop Recommendations:
+```bash
+https://www.kaggle.com/datasets/aksahaha/crop-recommendation?select=Crop_recommendation.csv
+```
+## For Fresh and stale classification
+```bash
+https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification
+```
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+# Run The Project
+## Step 1: Download the h5 file from below link or generate it own using above data
+```bash
+# save to fastApi_server/models
 
+https://drive.google.com/drive/folders/1ZagqUbdJ7HFA8mW_OTy1LuWfy8q8Wj4b?usp=sharing
+```
+## Step 2: Setup FastApi server
+
+   ### i. Create a Virtual Environment:
+   ```bash 
+   conda create --name myenv python=3.8
+   conda activate myenv
+   ```
+   ### ii. Requirements.txt file:
+   Now, you can install requirements.txt using the following command:
+   ```bash 
+   pip install -r requirements.txt
+   ```
+   ### iii. Run FastAPI Server:
+   Now, you can run the FastAPI server using the following command:
+   ```bash 
+   uvicorn your_fastapi_script_name:app --host 0.0.0.0 --port 8000 --reload
+   ```
+   ### iv. Access FastAPI Documentation:
+   Once the server is running, you can access the FastAPI documentation by navigating to ```bash http://localhost:8000 ``` in your web browser.
+
+## Step 3: Setup Express.js server
+   ### i. Install Node.js and npm
+   ### ii. Install all packages:
+      ```bash 
+      cd expressjs_server
+      npm install
+      ```
+   ### iii. Start the server:
+      ```bash
+      npm run start-dev
+      ```
+   ### iv. Access ExpressJs Documentation:
+   Once the server is running, you can access the Express documentation by navigating to ```bash http://localhost:3000 ``` in your web browser.
+
+
+## Step 3: Start the Metro Server
 To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
