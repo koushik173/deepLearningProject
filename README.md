@@ -45,24 +45,28 @@ https://drive.google.com/drive/folders/1ZagqUbdJ7HFA8mW_OTy1LuWfy8q8Wj4b?usp=sha
    uvicorn your_fastapi_script_name:app --host 0.0.0.0 --port 8000 --reload
    ```
    ### iv. Access FastAPI Documentation:
-   Once the server is running, you can access the FastAPI documentation by navigating to ```bash http://localhost:8000 ``` in your web browser.
+   Once the server is running, you can access the FastAPI documentation by navigating to ```http://localhost:8000``` in your web browser.
 
 ## Step 3: Setup Express.js server
    ### i. Install Node.js and npm
+   ```bash
+   # Download the latest version of Node.js
+   https://nodejs.org/en/download
+   ```
    ### ii. Install all packages:
-      ```bash 
-      cd expressjs_server
-      npm install
-      ```
+   ```bash 
+   cd expressjs_server
+   npm install
+   ```
    ### iii. Start the server:
-      ```bash
-      npm run start-dev
-      ```
+   ```bash
+   npm run start-dev
+   ```
    ### iv. Access ExpressJs Documentation:
-   Once the server is running, you can access the Express documentation by navigating to ```bash http://localhost:3000 ``` in your web browser.
+   Once the server is running, you can access the Express documentation by navigating to ```http://localhost:3000``` in your web browser.
 
 
-## Step 3: Start the Metro Server
+## Step 4: Start the Metro Server
 To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
@@ -73,7 +77,7 @@ npm start
 yarn start
 ```
 
-## Step 2: Start your Application
+## Step 5: Start your Application
 
 Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
@@ -101,7 +105,7 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+## Step 6: Modifying your App
 
 Now that you have successfully run the app, let's modify it.
 
